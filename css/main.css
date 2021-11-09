@@ -43,22 +43,9 @@ h1, h2, h3, h4, h5 {
     margin-top: 20px;
 }
 
-.business_content .business_card .card-wrap {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    display: inline-block;
-    margin: 10px;
-    width: 100%;
+.business_content .business_card .card-box {
     max-width: 335px;
     height: 496px;
-    background: #fff;
-}
 
-.business_content .business_card .card-wrap .card_images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    
 }
 
