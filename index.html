@@ -7,41 +7,46 @@
     <title>위드냥</title>
     <link rel="stylesheet" href="./library/fontawesome-free-web/css/all.min.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
     <!-- 헤더 -->
     <header id="main_header">
         <!-- 헤더메뉴 -->
-        <nav>
+        <nav class="header_menu">
             <div class="logo">
-                <a href="#" alt="logo">My logo</a>
+                <a href="#" alt="로고 이미지를 누르면 홈페이지 메인으로 돌아갑니다."><img src="./images/WITHNYANG-logo.png" alt="위드냥로고"></a>
             </div>
-            <ul>
+            <ul class="gnb_menu">
                 <li><a href="#">Business</a></li>
                 <li><a href="#">Shop</a></li>
+                <li><a href="#">Service</a></li>
                 <li><a href="#">Media Hub</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-        <!-- 서치바 -->
-        <div class="search">
-            <a href="#"><input type="text" class="search_box" placeholder="Search">
-            <i class="fas fa-search"></i></a>
-        </div>
-        <!-- 로그인 -->
-        <div>
-            <a href="#" alt="button">Login</a>
-        </div>
-        <!-- 쇼핑아이콘 -->
-        <div>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </div>
+        
+            <!-- 서치바 -->
+            <div class="search">
+                <a href="#"><input type="text" class="search_box" placeholder="Search">
+                <i class="fas fa-search"></i></a>
+            </div>
+            <!-- 로그인 -->
+            <div class="login">
+                <a href="#" alt="button">Login</a>
+            </div>
+            <!-- 쇼핑아이콘 -->
+            <div class="shop_icon">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav> 
 
         <!-- 헤더메인  -->
-        <div>
-            <h2>우리 동네 고양이와 함께</h2>
-            <h2>살아가는 법</h2>
+        <div class="main_wrap">
+            <div class="header_title">
+                <h2>우리 동네 고양이와 함께</h2>
+                <h2>살아가는 법</h2>
+            </div>
         </div>
     </header>
 
@@ -51,7 +56,7 @@
     <section id="main_container">
         <article class="business_content">
             <div class="title">
-                <h3>Business</h3>
+                <h1>Business</h1>
                 <p>네 발은 두 발보다 행복해야 합니다.</p>
             </div>
             <div class="business_card">
@@ -93,7 +98,7 @@
     <!-- 상품 -->
         <article class="product_content">
             <div class="title">
-                <h3>Our Product</h3>
+                <h1>Our Product</h1>
                 <p>우리 아이에게 필요한 제품을 만나보세요.</p>
             </div>
             <!-- 푸드 콘텐트 / 간식 / 영양제 div 로 각각... -->
