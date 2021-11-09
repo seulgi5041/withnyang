@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase !important;
+}
+
+
 /* 메인-컨테이너 잠시 보류 */
 #main_header {
-    
     margin: 0 auto;
-
 }
 
 
@@ -17,15 +20,28 @@
     margin-top: 125px;
 }
 
+/* 타이틀 */
 .business_content .title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .business_content .title h1 {
-    font-size: 2.0rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #2B41A7;
+    margin-bottom: 10px;
 }
 
+.business_content .title p {
+    font-size: 1.3rem;
+    color: #2B41A7;
+}
+
+/* 카드-애니메이션효과 */
+.business_content .business_card {
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 

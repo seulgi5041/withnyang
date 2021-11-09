@@ -61,6 +61,7 @@ ul { list-style: none; }
 }
 
 .header_menu .gnb_menu li a {
+    text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -118,6 +119,7 @@ ul { list-style: none; }
 .header_menu .login a {
     font-size: 1.8rem;
     font-weight: 700;
+    text-transform: uppercase
 }
 
 /* 장바구니-아이콘 */
