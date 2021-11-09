@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+body {
+  /* align-items: center; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+img {
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    background: orange;
+    clip-path: circle(25%);
+    height: 496px;
+    transition: clip-path 1s;
+    width: 335px;
+}
+
+img:hover {
+  clip-path: circle(75%);
+}
+
+.text-box {
+    position: absolute;
+    width: 335px;
+    height: 496px;
+}
+
+.text-box h4 {
+    position: absolute;
+    top: 0;
+}
+
+.text-box p {
+    position: absolute;
+    bottom: 0;
+}
+
+</style>
+</head>
+<body>
+    
+    <!-- <div class="box"></div> -->
+    <img src="../images/catfood.png" alt="">
+    <div class="text-box">
+        <h4>건강을 담은 먹거리</h4>
+        <p>사랑하는 우리 아이, <br />
+            아무거나 먹이실 건가요?</p>
+    </div>
+</body>
+</html>

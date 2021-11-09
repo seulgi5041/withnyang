@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5 {
     margin-top: 125px;
 }
 
-/* 타이틀 */
+/* 비즈니스_타이틀 */
 .business_content .title {
     margin-bottom: 25px;
 }
@@ -39,12 +39,173 @@ h1, h2, h3, h4, h5 {
 
 /* 카드-애니메이션효과 */
 .business_content .business_card {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.business_content .business_card .card-box {
+.business_image {
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    clip-path: circle(25%);
+    height: 496px;
+    transition: clip-path 1s;
     max-width: 335px;
+    width: 100%;
+}
+
+.business_image:hover {
+    clip-path: circle(75%);
+}
+
+.busin_text {
+    position: absolute;
+    top: 1160px;
+    width: 335px;
     height: 496px;
 }
 
+.busin_text h4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.7rem;
+    color: #E86E56;
+}
+
+.busin_text p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.3rem;
+    color: #E86E56;
+}
+
+
+/* 상품 */
+.product_content {
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: 125px;
+}
+
+/* 상품_슬라이드 박스 */
+/* 타이틀 */
+.product_content .food_content .title {
+    margin-bottom: 25px;
+}
+
+.product_content .food_content .title h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #2B41A7;
+    margin-bottom: 10px;
+}
+
+.product_content .food_content .title p {
+    font-size: 1.3rem;
+    color: #2B41A7;
+}
+
+/* 슬라이드전체박스 */
+
+.food_content {
+
+    position: relative;
+    width: 100%;
+    height: 674px;
+    background: #FFDF3E;
+
+    margin-bottom: 138px;
+}
+
+/* 더보기 */
+.food_content .more_btn {
+    position: absolute;
+    bottom: 30px;
+    left: 642.5px;
+}
+
+.more_btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background: #2B41A7;
+    color: #fff;
+    line-height: 50px;
+    font-size: 1.8rem;
+    padding-left: 35px;
+}
+
+
+/* 슬라이드 */
+
+
+
+/* 오른쪽 초록색 박스 */
+.food_box {
+    position: absolute;
+    width: 700px;
+    height: 832px;
+    top: 1702px;
+    right: 0;
+    background: #1A3431;
+
+    z-index: -1;
+    
+}
+
+
+
+/* 서비스 */
+/* 타이틀 */
+.service_content {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service_content .title {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.service_content .title h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #2B41A7;
+    margin-bottom: 10px;
+}
+
+/* 행동솔루션 */
+.service1 {
+    display: flex;
+
+    margin-bottom: 60px;
+}
+
+
+.service2 {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+
+
+/* 띠배너 */
+.banner_box {
+
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 60px;
+}
+
+.banner_box img {
+    max-width: 1920px;
+    width: 100%;
+}
