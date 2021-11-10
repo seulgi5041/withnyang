@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5 {
 /* 상품_슬라이드 박스 */
 /* 타이틀 */
 .product_content .food_content .title {
+    padding-top: 60px;
     margin-bottom: 25px;
 }
 
@@ -172,6 +173,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .service_content .title {
+    padding-bottom: 20px;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -186,15 +188,131 @@ h1, h2, h3, h4, h5 {
 /* 행동솔루션 */
 .service1 {
     display: flex;
-
+    justify-content: start;
     margin-bottom: 60px;
-}
+    align-items: center;
 
+    position: relative;
+    height: 760px;
+}
 
 .service2 {
     display: flex;
+    justify-content: space-between;
     flex-flow: row-reverse;
+    align-items: center;
 }
+
+/* 애니메이션 효과_글씨 나타남 */
+.service1 h3 {
+    position: absolute;
+    left: 260px;
+    font-size: 3.5rem;
+    color: #fff;
+
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    /* 클립백그라운드 */
+    background: url(../images/animate-text-fill.png) repeat-x;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.service2 h3 {
+    position: absolute;
+    right: 460px;
+    font-size: 3.5rem;
+    color: #fff;
+
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    /* 클립백그라운드 */
+    background: url(../images/animate-text-fill2.png) repeat-x;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf1 80s linear infinite;
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf1 {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* 행동솔루션 텍스트박스 */
+.text_box {
+    position: relative;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin: 0 100px;
+
+    transform: translate3d(0, 0, 0);
+}
+
+.text_box p {
+    font-size: 2.0rem;
+    font-weight: 500;
+    /* padding: 30px 5px; */
+    letter-spacing: 1px;
+}
+
+/* 텍스트박스-애니메이션 */
+.service1 .wave {
+    position: absolute;
+    right: 330px;
+
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 223, 62, 0.3);
+    transform-origin: 50% 48%;
+    border-radius: 44%;
+
+    transition-duration: 0.75s;
+    /* transition-property: margin-bottom; */
+    transition-timing-function: ease;
+    animation: rotate 2000ms infinite linear;
+}
+
+.service2 .wave {
+    position: absolute;
+    left: 350px;
+
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 223, 62, 0.3);
+
+    transform-origin: 50% 48%;
+    border-radius: 44%;
+
+    transition-duration: 0.75s;
+    /* transition-property: margin-bottom; */
+    transition-timing-function: ease;
+    animation: rotate 2000ms infinite linear;
+}
+
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+
+
 
 
 
