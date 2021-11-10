@@ -134,10 +134,13 @@ h1, h2, h3, h4, h5 {
     height: 50px;
     border-radius: 30px;
     background: #2B41A7;
-    color: #fff;
     line-height: 50px;
     font-size: 1.8rem;
     padding-left: 35px;
+}
+
+.more_btn a {
+    color: #fff;
 }
 
 
@@ -209,3 +212,218 @@ h1, h2, h3, h4, h5 {
     max-width: 1920px;
     width: 100%;
 }
+
+
+
+/* 고객리뷰 */
+.review_container {
+    position: relative;
+    height: 890px;
+    
+    margin-top: 200px;
+}
+
+/* 왼쪽 초록색 박스 */
+.review_box {
+    position: absolute;
+    width: 780px;
+    height: 890px;
+    top: -125px;
+    left: 0;
+    background: #1A3431;
+    z-index: -1;
+}
+
+/* 리뷰-타이틀 */
+.review_content {
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.review_content .title {
+    margin-bottom: 25px;
+}
+
+.review_content .title h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #FFE200;
+    letter-spacing: 2.0px;
+    margin-bottom: 10px;
+}
+
+.review_content .title p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+/* 더보기 */
+.review_content .review_btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -90px;
+}
+
+.review_btn a {
+    color: #fff;
+}
+
+/* 리뷰카드-슬라이드 */
+.review_content .review_card {
+    
+    margin-top: 30px;
+    margin-left: 340px;
+    /* 원래 990에서 1100으로 크기 키움 */
+    width: 1100px;
+    height: 500px;
+    background: #e3e3e3;
+}
+
+
+/* 매거진 */
+.magazine_container {
+    position: relative;
+    height: 2530px;
+
+    background: #FFDF3E;
+}
+
+.magazine_wrap {
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    position: relative;
+    height: 2530px;
+}
+
+.magazine_container .magazine_wrap .title {
+    padding-top: 60px;
+    margin-bottom: 25px;
+}
+
+.magazine_container .magazine_wrap .title h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #2B41A7;
+    margin-bottom: 10px;
+}
+
+.magazine_container .magazine_wrap .title p {
+    font-size: 1.3rem;
+    color: #2B41A7;
+}
+
+/* 더보기 */
+.magazine_container .more_btn {
+    position: absolute;
+    bottom: 60px;
+    left: 45vw;
+}
+
+/* 작은 배너 */
+.s_banner_container {
+    display: flex;
+    margin: 60px 0;
+    justify-content: space-around;
+
+    position: relative;
+}
+
+.s_banner_box {
+    position: relative;
+    height: 200px;
+}
+
+.s_banner_box .banner_title {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+.s_banner_box h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.s_banner_box .banner_text {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+
+.s_banner_box p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.s_banner_box .text_ani {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    transition: 1s;
+}
+
+.s_banner_box .text_ani:hover {
+    font-size: 2.7rem;
+}
+
+.s_banner_box hr {
+    position: absolute;
+    top: 121px;
+    right: 138px;
+    width: 80px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+/* SNS홍보 */
+.sns_container {
+    height: 700px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 223, 62, 0.3);
+}
+
+.sns_container .sns_content {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    position: relative;
+    height: 700px;
+}
+
+/* sns_타이틀 */
+.sns_container .sns_content .title {
+    padding-top: 60px;
+    margin-bottom: 25px;
+}
+
+.sns_container .sns_content .title h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #2B41A7;
+    margin-bottom: 10px;
+}
+
+.sns_container .sns_content .title p {
+    font-size: 1.3rem;
+    color: #2B41A7;
+}
+
+/* sns_더보기 */
+.sns_content .more_btn {
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+/* sns_컨텐츠 카드 */

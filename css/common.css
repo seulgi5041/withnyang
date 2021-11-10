@@ -160,14 +160,116 @@ ul { list-style: none; }
 
 
 
-/* 푸터 */
-#main_footer {
-    position: relative;
-    height: 330px;
 
-    /* background:rgb(170, 118, 6); */
+
+
+
+/* 상단버튼 */
+.topBtn {
+    width: 60px;
+    height: 60px;
+    background: #2B41A7;
 }
 
+
+
+/* 푸터 */
+#main_footer {
+    margin: 0 auto;
+
+    position: relative;
+    height: 330px;
+}
+
+/* 푸터_gnb : 언어설정, sns바로가기 등 */
+.footer_gnb {
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    height: 95px;
+    background: salmon;
+}
+
+.footer_gnb .lang a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 95px;
+    color: #555555;
+}
+
+.footer_gnb .footer_sns a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 95px;
+    color: #555555;
+    padding: 0 40px;
+}
+
+
+.footer_gnb .footer_sns i.fab {
+    padding: 0 5px;
+    font-size: 1.8rem;
+}
+
+
+/* 푸터 lnb */
+.footer_lnb {
+
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+.footer_lnb ul {
+    display: flex;
+
+    padding: 10px 0;
+}
+
+.footer_lnb ul > li {
+    padding-right: 20px;
+    font-size: 1.3rem;
+    color: #555555;
+}
+
+.copyright {
+    padding: 20px 5px;
+    font-size: 1.3rem;
+    color: #555555;
+}
+
+
+/* .footer_lnb .footer_title {
+    display: flex;
+}
+
+.footer_lnb .footer_title li {
+    padding: 10px 20px;
+}
+
+.footer_lnb .footer_title li:first-child {
+    padding: 10px 0;
+}
+
+.footer_lnb .footer_title li a {
+    font-size: 1.3rem;
+    color: #555555;
+}
+
+.footer_lnb .info {
+    display: flex;
+}
+
+.footer_lnb .info li {
+    padding: 10px 20px;
+} */
 
 
 

@@ -107,7 +107,9 @@
                     <h1>Our Product</h1>
                     <p>우리 아이에게 필요한 제품을 만나보세요.</p>
                 </div>
-                <a href="#" class="more_btn" alt="더보기">view more</a>
+                <div class="more_btn">
+                    <a href="#" alt="더보기">view more</a>
+                </div>
             </div>
             <div class="food_box"></div>
         </article>
@@ -144,83 +146,112 @@
 
 
     <!-- 리뷰 -->
-        <article>
-            <div class="title">
-                <h1>Customer review</h1>
-                <p>솔직한 후기를 만나보세요.</p>
+        <article class="review_container">
+            <div class="review_box"></div>
+            <div class="review_content">
+                <div class="title">
+                    <h1>Customer review</h1>
+                    <p>솔직한 후기를 만나보세요.</p>
+                </div>
+                <div class="review_btn">
+                    <a href="#" class="more_btn" alt="더보기">view more</a>
+                </div>
+                
+                <div class="review_card">
+                    <a href="#"></a>
+                </div>
             </div>
-            <div>
-                <a href="#" alt="더보기">view more</a>
-            </div>
-            <div class="review_card">
-                <a href="#"></a>
-            </div>
-
         </article>
 
 
     <!-- 매거진 -->
-        <article>
-            <div class="title">
-                <h1>Magazine</h1>
-                <p>소식지에서 새소식을 확인해보세요.</p>
-            </div>
+        <article class="magazine_container">
             <div class="magazine_wrap">
                 <p>withnyang</p>
+                <div class="title">
+                    <h1>Magazine</h1>
+                    <p>소식지에서 새소식을 확인해보세요.</p>
+                </div>
             </div>
+            
 
-            <div>
+            <div class="more_btn">
                 <a href="#" alt="더보기">view more</a>
             </div>
         </article>
 
 
     <!-- 배너-2개 -->
-        <aside>
-            <div>
-                <a href="#" alt="길고양이 겨울집 만들기">길고양이와 공존하는 사회</a>
+        <aside class="s_banner_container">
+            <div class="s_banner_box">
+                <img src="./images/s_banner_1.png" alt="길고양이와 공존하는 사회">
+                    <h3 class="banner_title">길고양이와 공존하는 사회</h3>
+                    <p class="banner_text">추운 겨울, 길 위에서 살아가는 고양이들에게 피난처를 제공해주세요.<p>
+                        <a href="#" class="view_btn">
+                            <hr />
+                            <h3 class="text_ani">view</h3>
+                        </a>
             </div>
 
-            <div>
-                <a href="#" alt="고양이 적정 칼로리 계산">적정 칼로리 궁금한가요?</a>
+            <div class="s_banner_box">
+                <img src="./images/s_banner_2.png" alt="고양이 적정 칼로리 계산하기">
+                    <h3 class="banner_title">적정 칼로리, 얼마나 먹여야 할까?</h3>
+                    <p class="banner_text">우리 고양이 얼마나 먹여야 할까요? 하루 적정 칼로리 간편하게 계산해보세요.<p>
+                        <a href="#" class="view_btn">
+                            <hr />
+                            <h3 class="text_ani">view</h3>
+                        </a>
             </div>
         </aside>
 
 
     <!-- sns홍보 -->
-        <article>
-            <div class="title">
-                <h1>Instagram</h1>
-                <p>인스타그램 놀러오세요.</p>
-            </div>
-
-            <div>
-                <a href="#" alt="더보기">view more</a>
-            </div>
-
-            <div>
-                <a href="#" alt="Instagram_1">냥하</a>
-                <a href="#" alt="Instagram_1">냥하</a>
-                <a href="#" alt="Instagram_1">냥하</a>
-                <a href="#" alt="Instagram_1">냥하</a>
+        <article class="sns_container">
+            <div class="sns_content">
+                <div class="title">
+                    <h1>Instagram</h1>
+                    <p>인스타그램 놀러오세요.</p>
+                </div>
+    
+                <div class="more_btn">
+                    <a href="#" alt="더보기">view more</a>
+                </div>
+    
+                <div class="sns_box">
+                    <a href="#" alt="Instagram_1">냥하</a>
+                    <a href="#" alt="Instagram_1">냥하</a>
+                    <a href="#" alt="Instagram_1">냥하</a>
+                    <a href="#" alt="Instagram_1">냥하</a>
+                </div>
             </div>
         </article>
     
     </section>
 
 
+    <a class="chatBtn" href="#">
+        <img src="./images/btn-gotop.png" alt="채팅버튼">
+    </a>
+
+    <a class="topBtn" href="#">
+        <img src="./images/btn-gotop.png" alt="상단버튼">
+    </a>
+
+
 
     <!-- 푸터 -->
 
     <footer id="main_footer">
-        <div class="lang">
-            <a href="#">한국/한국어</a>
-        </div>
-        <div class="footer_sns">
-            <a href="#">유튜브</a>
-            <a href="#">인스타그램</a>
-            <a href="#">페이스북</a>
-            <a href="#">트위터</a>
+        <div class="footer_gnb">
+            <div class="lang">
+                <a href="#">한국/한국어<i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="footer_sns">
+                <a href="#"><i class="fab fa-youtube"></i>유튜브</a>
+                <a href="#"><i class="fab fa-instagram"></i>인스타그램</a>
+                <a href="#"><i class="fab fa-facebook-square"></i>페이스북</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>트위터</a>
+            </div>    
         </div>
 
         <div class="footer_lnb">
@@ -231,23 +262,23 @@
                 <li><a href="#">운영정책</a></li>
                 <li><a href="#">이메일무단수집거부</a></li>
             </ul>
-            <ul>
+            <ul class="info">
                 <li>회사명 : 위드냥</li>
                 <li>사업자등록번호 : 000-00-00000 <a href="#">[사업자정보확인]</a></li>
                 <li>통신판매업신고번호 : 2021-인천구월O-0118</li>
             </ul>
-            <ul>
+            <ul class="adress">
                 <li>사업장주소 : 인천 남동구 문화로 147(구월동)</li>
                 <li>대표번호 : 032-123-1234</li>
             </ul>
-            <ul>
+            <ul class="ino_time">
                 <li>운영시간 : 평일 09:00 ~ 18:00 (주말, 공휴일 휴무)</li>
             </ul>
-            <ul>
+            <ul class="info_alrt">
                 <li>본 사이트의 모든 콘텐츠는 저작권법의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</li>
             </ul>
 
-            <p>Copyright © 2021 withnyang. All Rights Reserved.</p>
+            <p class="copyright">Copyright © 2021 withnyang. All Rights Reserved.</p>
 
         </div>
 
