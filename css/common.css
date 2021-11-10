@@ -162,14 +162,44 @@ ul { list-style: none; }
 
 
 
+/* 채팅버튼 */
+.chatBtn {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
 
-
-/* 상단버튼 */
-.topBtn {
     width: 60px;
     height: 60px;
     background: #2B41A7;
 }
+
+.chatBtn img {
+    display: block;
+    margin: 0 auto;
+
+    width: 60px;
+    height: 60px;
+}  
+
+
+
+/* 상단버튼 */
+.topBtn {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+    background: #2B41A7;
+}
+
+.topBtn img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}  
+
 
 
 
