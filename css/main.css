@@ -454,9 +454,17 @@ h1, h2, h3, h4, h5 {
     position: relative;
     max-width: 1440px;
     width: 100%;
+    /* top: 80px; */
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.magazine_container .imges_container:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -465,7 +473,7 @@ h1, h2, h3, h4, h5 {
     width: 686px;
     height: 591px;
 
-    top: 125px;
+    margin-top: 120px;
 }
 
 .magazine_container .imges_container .imgBx img {
@@ -479,16 +487,13 @@ h1, h2, h3, h4, h5 {
 
 .magazine_container .imges_container .imges_text {
     position: absolute;
-    left: 360px;
-    margin-top: 650px;
+    left: 560px;
+    margin-top: 550px;
     max-width: 500px;
     height: 80px;
     background: #1A3431;
 }
 
-.magazine_container .imges_container .imges_text:nth-of-type(3) {
-    left: 0;
-}
 
 .magazine_container .imges_container .imges_text p {
     font-size: 1.5rem;
