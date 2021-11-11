@@ -405,6 +405,7 @@ h1, h2, h3, h4, h5 {
     height: 2530px;
 
     background: #FFDF3E;
+    overflow-x: hidden;
 }
 
 .magazine_container::before {
@@ -472,6 +473,7 @@ h1, h2, h3, h4, h5 {
     position: relative;
     width: 686px;
     height: 591px;
+    overflow-x: hidden;
 
     margin-top: 120px;
 }
@@ -488,7 +490,7 @@ h1, h2, h3, h4, h5 {
 .magazine_container .imges_container .imges_text {
     position: absolute;
     left: 560px;
-    margin-top: 550px;
+    margin-top: 400px;
     max-width: 500px;
     height: 80px;
     background: #1A3431;
@@ -613,3 +615,88 @@ h1, h2, h3, h4, h5 {
 }
 
 /* sns_컨텐츠 카드 */
+.sns_box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 120px;
+}
+
+.square {
+    position: relative;
+    width: 310px;
+    height: 310px;
+}
+
+figcaption{
+    position:absolute;
+    top: 0;
+    width:310px; 
+    height:310px;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+figcaption i.fab{
+    color: #fff;
+    font-size:8rem; 
+    line-height:310px;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 10%;
+    top: 10%;
+    width: 0%;
+    height: 2px; 
+}
+
+.line::after {
+content: "";
+position: absolute;
+background: rgba(230, 230, 230, 0.7);
+display: inline-block;
+transition: all 0.5s;
+left: 10%;
+top: 90%;
+width: 0%;
+height: 2px; 
+}
+
+.line span::before {
+content: "";
+position: absolute;
+background: rgba(230, 230, 230, 0.7);
+display: inline-block;
+transition: all 0.5s;
+left: 10%;
+top: 10%;
+width: 2px;
+height: 0%; 
+}
+
+.line span::after {
+content: "";
+position: absolute;
+background: rgba(230, 230, 230, 0.7);
+display: inline-block;
+transition: all 0.5s;
+left: 90%;
+top: 10%;
+width: 2px;
+height: 0%; 
+}
+
+
+.square:hover figcaption {opacity: 1;}
+.square:hover .line::before { width: 80%; }
+.square:hover .line::after { width: 80%; }
+.square:hover .line span::before { height: 80%; }
+.square:hover .line span::after { height: 80.5%; }

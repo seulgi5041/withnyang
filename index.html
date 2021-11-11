@@ -7,6 +7,7 @@
     <title>위드냥</title>
     <link rel="stylesheet" href="./library/fontawesome-free-web/css/all.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/jarallax.css">
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -210,27 +211,27 @@
                     <h1>Magazine</h1>
                     <p>소식지에서 새소식을 확인해보세요.</p>
                     <div class="imges_container">
-                        <div class="imgBx">
-                            <img src="./images/magazine.png" alt="위드냥11월호소식지">
+                        <div class="imgBx jarallax">
+                            <img src="./images/magazine.png" class="jarallax-img" alt="위드냥11월호소식지">
                         </div>
-                        <div class="imges_text">
+                        <div class="imges_text" data-jarallax-element="-200 0">
                             <p>위드냥 11월호 소식지 안내 -<br /> 길 위에서 살아가는 동물들을 위한 겨울집 공동구매 안내</p>
                         </div>
                     </div>
                     <div class="imges_container">
-                        <div class="imgBx">
+                        <div class="imgBx jarallax" data-jarallax-element="-100 0">
                             <img src="./images/magazine_cat.png" alt="위드냥 고양이 카페 오픈">
                         </div>
-                        <div class="imges_text">
+                        <div class="imges_text" data-jarallax-element="0 200">
                             <p>고양이 카페 오픈 예정-<br /> 길고양이를 위한 고양이 카페 오픈 예정중에 있습니다.</p>
                         </div>
                     </div>
 
-                    <div class="imges_container">
-                        <div class="imgBx">
+                    <div class="imges_container" data-jarallax-element="0 100">
+                        <div class="imgBx jarallax" >
                             <img src="./images/magazine_nobgve.png" alt="사슴고기 사료 런칭">
                         </div>
-                        <div class="imges_text">
+                        <div class="imges_text" data-jarallax-element="200 0">
                             <p>NEW! 순수 92% 사슴고기<br /> 어떠한 첨가물도 넣지 않았습니다. 프리미엄 사료를 선물하세요.</p>
                         </div>
                     </div>
@@ -282,10 +283,57 @@
                 </div>
     
                 <div class="sns_box">
-                    <a href="#" alt="Instagram_1">냥하</a>
-                    <a href="#" alt="Instagram_1">냥하</a>
-                    <a href="#" alt="Instagram_1">냥하</a>
-                    <a href="#" alt="Instagram_1">냥하</a>
+                    <figure class="square">
+                        <a href="#"><img src="./images/ins_square1.png" alt="인스타그램 이미지1">
+
+                            <figcaption>
+                                <div class="line">
+                                    <span>
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    
+                    <figure class="square">
+                        <a href="#"><img src="./images/ins_square2.png" alt="인스타그램 이미지1">
+
+                            <figcaption>
+                                <div class="line">
+                                    <span>
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class="square">
+                        <a href="#"><img src="./images/ins_square3.png" alt="인스타그램 이미지1">
+
+                            <figcaption>
+                                <div class="line">
+                                    <span>
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class="square">
+                        <a href="#"><img src="./images/ins_square4.png" alt="인스타그램 이미지1">
+
+                            <figcaption>
+                                <div class="line">
+                                    <span>
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
                 </div>
             </div>
         </article>
@@ -353,5 +401,9 @@
     <script src="./js/jquery-2.2.4.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/jarallax.js"></script>
+    <script src="./js/jarallax-element.js"></script>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
