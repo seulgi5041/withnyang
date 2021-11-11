@@ -462,19 +462,39 @@ h1, h2, h3, h4, h5 {
 
 .magazine_container .imges_container .imgBx {
     position: relative;
-    width: 574px;
-    height: 495px;
-    
-    
+    width: 686px;
+    height: 591px;
+
+    top: 125px;
 }
 
 .magazine_container .imges_container .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.magazine_container .imges_container .imges_text {
+    position: absolute;
+    left: 360px;
+    margin-top: 650px;
+    max-width: 500px;
+    height: 80px;
+    background: #1A3431;
+}
+
+.magazine_container .imges_container .imges_text:nth-of-type(3) {
+    left: 0;
+}
+
+.magazine_container .imges_container .imges_text p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 38px;
 }
 
 
