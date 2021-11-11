@@ -146,8 +146,8 @@ h1, h2, h3, h4, h5 {
 
 
 /* 슬라이드 */
-.swiper-container1 {
-    
+.swiper-container {
+    width: 100%;
 }
 
 
