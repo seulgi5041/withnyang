@@ -314,8 +314,6 @@ h1, h2, h3, h4, h5 {
 
 
 
-
-
 /* 띠배너 */
 .banner_box {
 
@@ -400,12 +398,26 @@ h1, h2, h3, h4, h5 {
 }
 
 
+
 /* 매거진 */
 .magazine_container {
     position: relative;
     height: 2530px;
 
     background: #FFDF3E;
+}
+
+.magazine_container::before {
+    content: 'WITHNYANG';
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-30deg);
+    font-size: 20rem;
+    font-size: 700;
+    color: #1A3431;
+    -webkit-text-stroke: 2px solid #1A3431;
 }
 
 .magazine_wrap {
@@ -434,6 +446,37 @@ h1, h2, h3, h4, h5 {
     font-size: 1.3rem;
     color: #2B41A7;
 }
+
+
+/* 매거진 이미지들 */
+
+.magazine_container .imges_container {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.magazine_container .imges_container .imgBx {
+    position: relative;
+    width: 574px;
+    height: 495px;
+    
+    
+}
+
+.magazine_container .imges_container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* 더보기 */
 .magazine_container .more_btn {
