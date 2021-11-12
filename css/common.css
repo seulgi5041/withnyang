@@ -225,6 +225,19 @@ ul { list-style: none; }
 
     position: relative;
     height: 330px;
+
+    border-top: 1px solid #555;
+}
+
+.footer_line::after {
+    content: "";
+    position: absolute;
+    background: #555;
+    display: inline-block;
+    left: 0;
+    top: 28.5%;
+    width: 100%;
+    height: 1px;
 }
 
 /* 푸터_gnb : 언어설정, sns바로가기 등 */
@@ -233,12 +246,10 @@ ul { list-style: none; }
     width: 100%;
 
     margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
 
     height: 95px;
-    background: salmon;
 }
 
 .footer_gnb .lang a {
@@ -256,66 +267,97 @@ ul { list-style: none; }
     padding: 0 40px;
 }
 
-
 .footer_gnb .footer_sns i.fab {
     padding: 0 5px;
     font-size: 1.8rem;
 }
 
-
 /* 푸터 lnb */
 .footer_lnb {
-
     max-width: 1440px;
     width: 100%;
-
     margin: 0 auto;
-
+    margin-top: 10px;
 }
 
 .footer_lnb ul {
     display: flex;
-
     padding: 10px 0;
+}
+
+.footer_lnb .footer_title li {
+    position: relative;
+    height: 21px;
+}
+
+.footer_lnb .footer_title li::after {
+    position: absolute;
+    content: "";
+    background: #555;
+    display: inline-block;
+    left: -10px;
+    top: 2px;
+    width: 1px;
+    height: 80%;
+}
+
+.footer_lnb .footer_title li:first-child::after {
+    display: none;
+}
+
+.footer_lnb .info li {
+    position: relative;
+    height: 17px;
+}
+
+.footer_lnb .info li::after {
+    position: absolute;
+    content: "";
+    background: #555;
+    display: inline-block;
+    left: -10px;
+    top: 3px;
+    width: 1px;
+    height: 70%;
+}
+
+.footer_lnb .info li:first-child::after {
+    display: none;
+}
+
+.footer_lnb .adress li {
+    position: relative;
+    height: 17px;
+}
+
+.footer_lnb .adress li::after {
+    position: absolute;
+    content: "";
+    background: #555;
+    display: inline-block;
+    left: -10px;
+    top: 3px;
+    width: 1px;
+    height: 70%;
+}
+
+.footer_lnb .adress li:first-child::after {
+    display: none;
+}
+
+.footer_lnb .footer_title li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #555;
 }
 
 .footer_lnb ul > li {
     padding-right: 20px;
     font-size: 1.3rem;
-    color: #555555;
-}
-
-.copyright {
-    padding: 20px 5px;
-    font-size: 1.3rem;
-    color: #555555;
+    color: #555;
 }
 
 
-/* .footer_lnb .footer_title {
-    display: flex;
-}
-
-.footer_lnb .footer_title li {
-    padding: 10px 20px;
-}
-
-.footer_lnb .footer_title li:first-child {
-    padding: 10px 0;
-}
-
-.footer_lnb .footer_title li a {
-    font-size: 1.3rem;
-    color: #555555;
-}
-
-.footer_lnb .info {
-    display: flex;
-}
-
-.footer_lnb .info li {
-    padding: 10px 20px;
-} */
 
 
 
