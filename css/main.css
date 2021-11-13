@@ -142,9 +142,19 @@ h1, h2, h3, h4, h5 {
     /* border-bottom: 1px solid black; */
 }
 
+
 .food_content .food_icon .icon_box i.fas {
     font-size: 2.0rem;
     color: #555;
+    transition: 0.6s;
+}
+
+.food_content .food_icon .icon_box:hover i.fas{
+    color: #E86E56;
+}
+
+.food_content .food_icon .icon_box:hover p {
+    color: #E86E56;
 }
 
 .food_content .food_icon .icon_box i.fa-fish {
@@ -160,7 +170,10 @@ h1, h2, h3, h4, h5 {
     font-weight: 600;
     letter-spacing: 1px;
     color: #555;
+
+    transition: 0.6s;
 }
+
 
 /* 더보기 */
 .food_content .more_btn {
@@ -197,6 +210,18 @@ h1, h2, h3, h4, h5 {
 
 .swiper-container .swiper-slide .food_slide img {
     max-width: 250px;
+}
+
+.pro-button-next {
+    background: url('../images/probutton_next.png') no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.pro-button-prev {
+    background: url('../images/probutton_prev.png') no-repeat;
+    background-size: auto;
+    background-position: center;
 }
 
 /* 오른쪽 초록색 박스 */

@@ -145,6 +145,15 @@ ul { list-style: none; }
     font-size: 1.8rem;
 }
 
+
+/* 하위메뉴 */
+.lnb_container {
+    display: none;
+}
+
+
+
+
 /* 헤더메인 */
 #main_header .swiper-container {
     width: 100%;
@@ -161,6 +170,18 @@ ul { list-style: none; }
 
 .swiper-container .swiper-slide .main_wrap .bg_img img {
     max-width: 100%;
+}
+
+.header-button-next {
+    background: url('../images/button_next.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.header-button-prev {
+    background: url('../images/button_prev.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
 }
 
 /* 헤더 타이틀 */
