@@ -403,7 +403,6 @@ h1, h2, h3, h4, h5 {
     animation: rotate 2000ms infinite linear;
 }
 
-
 @keyframes rotate {
     from { transform: rotate(0deg); }
     from { transform: rotate(360deg); }
@@ -632,7 +631,6 @@ h1, h2, h3, h4, h5 {
     background: #1A3431;
 }
 
-
 .magazine_container .imges_container .imges_text p {
     font-size: 1.5rem;
     color: #fff;
@@ -641,13 +639,13 @@ h1, h2, h3, h4, h5 {
     padding: 10px;
 }
 
-
 /* 더보기 */
 .magazine_container .more_btn {
     position: absolute;
     bottom: 60px;
     left: 45vw;
 }
+
 
 /* 작은 배너 */
 .s_banner_container {
@@ -661,6 +659,11 @@ h1, h2, h3, h4, h5 {
 .s_banner_box {
     position: relative;
     height: 200px;
+}
+
+.s_banner_box img {
+    max-width: 100%;
+    width: 100%;
 }
 
 .s_banner_box .banner_title {
