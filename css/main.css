@@ -49,6 +49,13 @@ h1, h2, h3, h4, h5 {
     margin-top: 20px;
 }
 
+.card_box {
+    box-shadow: 0 15px 25px rgba(65, 65, 65, 0.2);
+    border-radius: 30px;
+    height: 496px;
+    
+}
+
 .business_image {
     position: relative;
     z-index: 2;
@@ -58,6 +65,7 @@ h1, h2, h3, h4, h5 {
     transition: clip-path 1s;
     max-width: 335px;
     width: 100%;
+
 }
 
 .business_image:hover {
@@ -73,16 +81,16 @@ h1, h2, h3, h4, h5 {
 
 .busin_text h4 {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     font-size: 1.7rem;
     color: #E86E56;
 }
 
 .busin_text p {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 30px;
+    left: 20px;
     font-size: 1.3rem;
     color: #E86E56;
 }
@@ -136,12 +144,16 @@ h1, h2, h3, h4, h5 {
     display: flex;
 }
 
-.food_content .food_icon .icon_box {
+.icon_box {
     width: 229px;
     height: 55px;
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid #555;
+    transition: ease-in-out 0.6s;
 }
 
+.icon_box:hover {
+    border-bottom: 1px solid #E86E56;
+}
 
 .food_content .food_icon .icon_box i.fas {
     font-size: 2.0rem;
@@ -151,10 +163,13 @@ h1, h2, h3, h4, h5 {
 
 .food_content .food_icon .icon_box:hover i.fas{
     color: #E86E56;
+    font-size: 2.4rem;
 }
 
 .food_content .food_icon .icon_box:hover p {
     color: #E86E56;
+    font-size: 1.4rem;
+    /* padding-top: 7px; */
 }
 
 .food_content .food_icon .icon_box i.fa-fish {
@@ -171,7 +186,12 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     color: #555;
 
-    transition: 0.6s;
+    transition: ease-in 0.6s;
+}
+
+.icon_box button {
+    border: none;
+    background: transparent;
 }
 
 
@@ -223,6 +243,9 @@ h1, h2, h3, h4, h5 {
     background-size: auto;
     background-position: center;
 }
+
+
+
 
 /* 오른쪽 초록색 박스 */
 .food_box {
