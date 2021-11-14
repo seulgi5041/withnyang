@@ -166,12 +166,6 @@ h1, h2, h3, h4, h5 {
     font-size: 2.4rem;
 }
 
-.food_content .food_icon .icon_box:hover p {
-    color: #E86E56;
-    font-size: 1.4rem;
-    /* padding-top: 7px; */
-}
-
 .food_content .food_icon .icon_box i.fa-fish {
     position: absolute;
     top: -10px;
@@ -187,6 +181,12 @@ h1, h2, h3, h4, h5 {
     color: #555;
 
     transition: ease-in 0.6s;
+}
+
+.food_content .food_icon .icon_box:hover p {
+    color: #E86E56;
+    font-size: 1.4rem;
+    /* padding-top: 7px; */
 }
 
 .icon_box button {
@@ -244,9 +244,6 @@ h1, h2, h3, h4, h5 {
     background-position: center;
 }
 
-
-
-
 /* 오른쪽 초록색 박스 */
 .food_box {
     position: absolute;
@@ -293,11 +290,23 @@ h1, h2, h3, h4, h5 {
     height: 760px;
 }
 
+.service1 img {
+    width: 100%;
+    max-width: 690px;
+    height: 760px;
+}
+
 .service2 {
     display: flex;
     justify-content: space-between;
     flex-flow: row-reverse;
     align-items: center;
+}
+
+.service2 img {
+    width: 100%;
+    max-width: 690px;
+    height: 760px;
 }
 
 /* 애니메이션 효과_글씨 나타남 */
@@ -412,11 +421,9 @@ h1, h2, h3, h4, h5 {
 
 /* 띠배너 */
 .banner_box {
-
     margin-top: 60px;
     width: 100%;
     height: 100%;
-
     margin-bottom: 60px;
 }
 
@@ -434,9 +441,6 @@ h1, h2, h3, h4, h5 {
     
     margin-top: 200px;
 }
-
-
-
 
 /* 왼쪽 초록색 박스 */
 .review_box {
@@ -485,7 +489,7 @@ h1, h2, h3, h4, h5 {
     color: #fff;
 }
 
-/* 리뷰카드-슬라이드 */
+/* 리뷰카드 */
 .review_content .review_cards {
     
     margin-top: 30px;
@@ -508,6 +512,12 @@ h1, h2, h3, h4, h5 {
     background: #fff;
 }
 
+.review_cards .costomer_square img {
+    max-width: 320px;
+    width: 100%;
+    height: 320px;
+}
+
 .review_cards .costomer_square .title {
     margin-top: 10px;
     margin-left: 10px;
@@ -518,6 +528,7 @@ h1, h2, h3, h4, h5 {
 .review_cards .costomer_square .title h3 {
     font-size: 1.6rem;
     padding-bottom: 10px;
+    color: #555;
 }
 
 .review_cards .costomer_square .title p {
@@ -559,9 +570,7 @@ h1, h2, h3, h4, h5 {
 .magazine_wrap {
     max-width: 1440px;
     width: 100%;
-
     margin: 0 auto;
-
     position: relative;
     height: 2530px;
 }
@@ -583,15 +592,11 @@ h1, h2, h3, h4, h5 {
     color: #2B41A7;
 }
 
-
 /* 매거진 이미지들 */
-
 .magazine_container .imges_container {
     position: relative;
-    max-width: 1440px;
-    width: 100%;
+    /* width: 100%; */
     /* top: 80px; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -606,11 +611,19 @@ h1, h2, h3, h4, h5 {
 
 .magazine_container .imges_container .imgBx {
     position: relative;
-    width: 686px;
+    width: 100%;
+    max-width: 686px;
     height: 591px;
     overflow-x: hidden;
 
     margin-top: 120px;
+}
+
+.magazine_container .imges_container .cat {
+    position: relative;
+    width: 440px;
+    height: 600px;
+    overflow-x: hidden;
 }
 
 .magazine_container .imges_container .imgBx img {
@@ -652,18 +665,20 @@ h1, h2, h3, h4, h5 {
     display: flex;
     margin: 60px 0;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
 
     position: relative;
 }
 
 .s_banner_box {
     position: relative;
-    height: 200px;
+    margin: 0 10px;
 }
 
 .s_banner_box img {
-    max-width: 100%;
+    max-width: 900px;
     width: 100%;
+
 }
 
 .s_banner_box .banner_title {
@@ -713,7 +728,6 @@ h1, h2, h3, h4, h5 {
 /* SNS홍보 */
 .sns_container {
     height: 700px;
-    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     background: rgba(255, 223, 62, 0.3);
@@ -761,11 +775,19 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
     
     margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .square {
     position: relative;
     width: 310px;
+    height: 310px;
+}
+
+.square img {
+    max-width: 310px;
+    width: 100%;
     height: 310px;
 }
 
@@ -834,7 +856,6 @@ width: 2px;
 height: 0%; 
 }
 
-
 .square:hover figcaption {opacity: 1;}
 .square:hover .line::before { width: 80%; }
 .square:hover .line::after { width: 80%; }
@@ -842,15 +863,473 @@ height: 0%;
 .square:hover .line span::after { height: 80.5%; }
 
 
+
+/* 미디어쿼리 */
 @media all and (min-width:1440px) {
 
 }
 
-@media all and (min-width:1024px) and (max-width:1439px) { }
+@media all and (min-width:1024px) and (max-width:1439px) { 
+    /* 비즈니스 */
+    .business_content {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 125px;
+    }
+
+    .card_box { height: 355px; }
+
+    .business_image {
+        height: 355px;
+        max-width: 240px;
+        width: 100%;
+    }
+
+    .busin_text {
+        width: 240px;
+        height: 355px;
+    }
+
+    /* 상품 */
+    .product_content { max-width: 1024px; }
+
+    /* 슬라이드전체박스 */
+    /* 노랑색박스 */
+    .food_content {
+        max-width: 850px;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 125px;
+    }
+
+    /* 슬라이드 */
+    .swiper-container { width: 100%; }
+    .swiper1 { margin-top: 80px; }
+    .swiper-container .swiper-slide .food_slide {
+        max-width: 160px;
+        height: 160px;
+        width: 100%;
+    }
+    .swiper-container .swiper-slide .food_slide img { max-width: 160px; }
+
+    /* 아이콘 */
+    .icon_box {
+        width: 150px;
+        height: 55px;
+    }
+
+    .food_content .food_icon .icon_box i.fas { font-size: 1.7rem; }
+    .food_content .food_icon .icon_box:hover i.fas{
+        color: #E86E56;
+        font-size: 2.0rem;
+    }
+    
+    .food_content .food_icon .icon_box i.fa-fish {
+        position: absolute;
+        top: -9px;
+        left: 50px;
+        transform: rotate(-30deg);
+    }
+    
+    .food_content .food_icon .icon_box p {
+        padding-top: 8px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #555;
+        transition: ease-in 0.6s;
+    }
+    
+    .food_content .food_icon .icon_box:hover p {
+        color: #E86E56;
+        font-size: 1.2rem;
+    }
+    
+    /* 더보기 */
+    .food_content .more_btn {
+        bottom: 30px;
+        left: 350px;
+    }
+
+    .more_btn {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.5rem;
+        padding-left: 28px;
+    }
+
+    /* 오른쪽 초록색 박스 */
+    .food_box {
+        width: 550px;
+        top: 1562px;
+        height: 642px;
+    }
+
+
+    /* 서비스 */
+    /* 타이틀 */
+    .service_content { max-width: 1024px; }
+    .service_content .title { padding-bottom: 15px; }
+
+    /* 행동솔루션 */
+    .service1 { height: 550px; }
+    .service1 img {
+        width: 100%;
+        max-width: 450px;
+        height: 550px;
+    }
+
+    .service2 { height: 550px; }
+    .service2 img {
+        width: 100%;
+        max-width: 450px;
+        height: 550px;
+    }
+
+    /* 애니메이션 효과_글씨 나타남 */
+    .service1 h3 {
+    left: 140px;
+    font-size: 3.0rem;
+    }
+
+    .service2 h3 {
+        right: 120px;
+        font-size: 3.0rem;
+    }
+
+    /* 행동솔루션 텍스트박스 */
+    .text_box {
+        height: 550px;
+        margin: 0 100px;
+    }
+
+    .text_box p {
+        font-size: 2.0rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    /* 텍스트박스-애니메이션 */
+    .service1 .wave { right: 160px; }
+    .service2 .wave { left: 130px; }
+
+    /* 띠배너 */
+    .banner_box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner_box img {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+
+
+    /* 고객리뷰 */
+    .review_container {
+        height: 642px;
+    }
+
+    /* 왼쪽 초록색 박스 */
+    .review_box {
+        width: 550px;
+        height: 642px;
+    }
+    .review_content .title {
+        margin-bottom: 15px;
+    }
+
+    /* 리뷰카드 */
+    .review_content .review_cards {
+        margin-top: 20px;
+        margin-left: 240px;
+        width: 770px;
+        height: 300px;
+    }
+
+    .review_cards .costomer_square {
+        width: 240px;
+        height: 400px;
+        padding: 0 15px;
+        background: #fff;
+    }
+
+    .review_cards .costomer_square img {
+        max-width: 240px;
+        width: 100%;
+        height: 240px;
+    }
+
+    .review_cards .costomer_square .title { width: 240px; }
+
+    /* 더보기 */
+    .review_content .review_btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -90px;
+    }
+
+
+    /* 매거진 */
+    .magazine_container {
+        height: 2400px;
+    }
+
+    .magazine_container::before {
+        top: 50%;
+        left: 8%;
+        font-size: 15rem;
+    }
+
+    .magazine_wrap {
+        max-width: 1024px;
+        height: 2470px;
+    }
+
+    /* 매거진이미지 */
+    .magazine_container .imges_container {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .magazine_container .imges_container .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .magazine_container .imges_container .cat {
+        position: relative;
+        width: 400px;
+        height: 600px;
+        overflow-x: hidden;
+    }
+    
+    .magazine_container .imges_container .imges_text {
+        position: absolute;
+        left: 400px;
+        margin-top: 400px;
+        max-width: 500px;
+        height: 65px;
+        background: #1A3431;
+    }
+    
+    .magazine_container .imges_container .imges_text p {
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 600;
+        line-height: 22px;
+        padding: 8px;
+    }
+
+
+    /* 작은배너 */
+    .s_banner_container {
+        margin: 60px 0;
+        flex-wrap: wrap;
+    }
+    .s_banner_box { margin-top: 10px; }
+
+    
+
+    /* SNS홍보 */
+    .sns_container {
+        height: 500px;
+        width: 100%;
+    }
+
+    .sns_container .sns_content {
+        max-width: 1024px;
+        margin-top: 30px;
+        height: 500px;
+    }
+
+    /* sns_컨텐츠 카드 */
+    .sns_box { margin-top: 60px; }
+
+    .square {
+        width: 210px;
+        height: 210px;
+    }
+
+    .square img {
+        max-width: 210px;
+        width: 100%;
+        height: 210px;
+    }
+
+    figcaption {
+        width:210px; 
+        height:210px;
+    }
+    figcaption i.fab { line-height:210px; }
+    
+    .square:hover figcaption {opacity: 1;}
+    .square:hover .line::before { width: 80%; }
+    .square:hover .line::after { width: 80%; }
+    .square:hover .line span::before { height: 80%; }
+    .square:hover .line span::after { height: 80.5%; }
+
+
+}
 
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
-@media all and (min-width:768px) and (max-width:1023px) {}
+@media all and (min-width:768px) and (max-width:1023px) {
+    .business_content { margin-top: 60px; }
+    
+    /* 비즈니스_타이틀 */
+    .business_content .title { 
+        margin-bottom: 25px; 
+        margin-left: 50px;
+    }
+    
+    /* 카드-애니메이션효과 */
+    .business_content .business_card {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card_box { margin-bottom: 20px; }
+
+    .busin_text {
+        position: absolute;
+        top: 530px;
+        width: 335px;
+        height: 496px;
+    }
+
+    .busin_text:nth-of-type(2) {
+        position: absolute;
+        top: 530px;
+        width: 335px;
+        height: 496px;
+    }
+
+    .busin_text:nth-of-type(3) {
+        position: absolute;
+        top: 1000px;
+        width: 335px;
+        height: 496px;
+    }
+
+    .busin_text h4 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.7rem;
+        color: #E86E56;
+    }
+    
+    /* .busin_text p {
+        position: absolute;
+        bottom: 140px;
+        left: 20px;
+        font-size: 1.3rem;
+        color: #E86E56;
+    } */
+    
+
+    /* 상품 */
+    .product_content {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    /* 상품_슬라이드 박스 */
+    /* 타이틀 */
+    .product_content .food_content .title {
+        padding-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    /* 슬라이드전체박스 */
+    .food_content {
+        max-width: 768px;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 80px;
+    }
+
+    .swiper-container { width: 100%; }
+    .swiper1 { margin-top: 10px; }
+    .swiper-container .swiper-slide .food_slide {
+        max-width: 160px;
+        height: 160px;
+        width: 100%;
+    }
+    .swiper-container .swiper-slide .food_slide img { max-width: 160px; }
+
+    /* 상품_슬라이드 아이콘 버튼 */
+    .icon_box {
+        width: 100px;
+        height: 50px;
+    }
+
+    .food_content .food_icon { top: 40px; }
+
+    .food_content .food_icon .icon_box i.fas {
+        font-size: 1.2rem;
+    }
+
+    .food_content .food_icon .icon_box:hover i.fas{
+        font-size: 1.5rem;
+    }
+
+    .food_content .food_icon .icon_box i.fa-fish {
+        position: absolute;
+        top: -5px;
+        left: 33px;
+        transform: rotate(-40deg);
+    }
+
+    .food_content .food_icon .icon_box p {
+        padding-top: 8px;
+        font-size: 1.0rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .food_content .food_icon .icon_box:hover p {
+        color: #E86E56;
+        font-size: 0.7rem;
+        /* padding-top: 7px; */
+    }
+
+     /* 더보기 */
+    .food_content .more_btn {
+        bottom: 30px;
+        left: 350px;
+    }
+
+    .more_btn {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.5rem;
+        padding-left: 28px;
+    }
+
+    /* 오른쪽 초록색 박스 */
+    .food_box {
+        width: 540px;
+        top: 1562px;
+        height: 622px;
+    }
+
+
+
+    /* 서비스 */
+
+}
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width:480px) and (max-width:767px) { }
