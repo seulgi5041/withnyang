@@ -22,6 +22,7 @@ ul { list-style: none; }
 /* 헤더 */
 #main_header {
     position: relative;
+    width: 100%;
     height: 942px;
     z-index: 1;
 }
@@ -135,7 +136,6 @@ ul { list-style: none; }
 }
 
 
-
 /* 모바일(반응형) 메뉴들 */
 /* 하위메뉴 */
 .lnb_container {
@@ -181,8 +181,6 @@ ul { list-style: none; }
 }
 
 
-
-
 /* 헤더메인 */
 #main_header .swiper-container {
     width: 100%;
@@ -200,14 +198,24 @@ ul { list-style: none; }
     height: 100%;
 }
 
-.swiper-container .swiper-slide .main_wrap .bg_img .tablet_ver { display: none; }
-.swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { display: none; }
-
-
-
-.swiper-container .swiper-slide .main_wrap .bg_img img {
+.swiper-container .swiper-slide .main_wrap .bg_img .pc_ver {
     max-width: 100%;
+    width: 100%;
     height: 942px;
+}
+
+.swiper-container .swiper-slide .main_wrap .bg_img .tablet_ver { 
+    display: none;
+    max-width: 100%;
+    /* width: 100%; */
+    height: 377px;
+}
+
+.swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { 
+    display: none; 
+    max-width: 100%;
+    /* width: 100%; */
+    height: 236px;
 }
 
 .header-button-next {
@@ -448,8 +456,9 @@ ul { list-style: none; }
 
 
 
+/* 미디어쿼리 */
 @media all and (min-width:1440px) {
-
+    #main_header { width: 100%; }
 }
 
 @media all and (min-width:1024px) and (max-width:1439px) {
@@ -588,7 +597,10 @@ ul { list-style: none; }
     /* 슬라이드배너 이미지(피씨, 모바일버전감추기 */
     .swiper-container .swiper-slide .main_wrap .bg_img .pc_ver { display: none; }
     .swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { display: none; }
-    .swiper-container .swiper-slide .main_wrap .bg_img .tablet_ver { display: block; }
+    .swiper-container .swiper-slide .main_wrap .bg_img .tablet_ver { 
+        display: block; 
+        width: 100%;
+    }
 
     /* gnb메뉴,서치바,로그인,쇼핑아이콘 없애기 */
     .header_menu .gnb_menu { display: none; }
@@ -696,7 +708,11 @@ ul { list-style: none; }
     /* 슬라이드배너 이미지(피씨, 모바일버전감추기 */
     .swiper-container .swiper-slide .main_wrap .bg_img .pc_ver { display: none; }
     .swiper-container .swiper-slide .main_wrap .bg_img .tablet_ver { display: none; }
-    .swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { display: block; }
+    .swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { 
+        display: block;
+        max-width: 786px; 
+        width: 100%;
+    }
 
     /* gnb메뉴,서치바,로그인,쇼핑아이콘 없애기 */
     .header_menu .gnb_menu { display: none; }
@@ -801,7 +817,10 @@ ul { list-style: none; }
     /* 슬라이드배너 이미지(피씨, 모바일버전감추기 */
     .swiper-container .swiper-slide .main_wrap .bg_img .pc_ver { display: none; }
     .swiper-container .swiper-slide .main_wrap .bg_img .tablet_ver { display: none; }
-    .swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { display: block; }
+    .swiper-container .swiper-slide .main_wrap .bg_img .mobile_ver { 
+        display: block; 
+        max-width: 310px;
+    }
 
     /* gnb메뉴,서치바,로그인,쇼핑아이콘 없애기 */
     .header_menu .gnb_menu { display: none; }
@@ -885,5 +904,3 @@ ul { list-style: none; }
         color: #555;
     }
 }
-
-
