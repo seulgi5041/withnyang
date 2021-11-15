@@ -435,6 +435,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
 }
 
+.banner_box .mobile_banner { display: none; }
 
 
 /* 고객리뷰 */
@@ -1882,6 +1883,16 @@ height: 0%;
     }
 
 
+    /* 띠배너 모바일버전 */
+    .banner_box .pc_banner { display: none; }
+    .banner_box .mobile_banner { display: block; }
+
+    .banner_box .mobile_banner {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
     /* 리뷰 */
     /* 고객리뷰 */
     .review_container {
@@ -1923,7 +1934,7 @@ height: 0%;
     .review_content .review_cards {
         margin-top: 50px;
         margin-left: 40px;
-        width: 480px;
+        width: 430px;
         height: 500px;
     }
     .review_cards { flex-direction: column; }
@@ -2071,6 +2082,7 @@ height: 0%;
     .sns_container { height: 350px; }
     .sns_container .sns_content {
         max-width: 768px;
+        height: 350px;
     }
 
     /* sns_타이틀 */
@@ -2092,24 +2104,24 @@ height: 0%;
     .sns_box { margin-top: 60px; }
 
     .square {
-        width: 200px;
-        height: 90px;
-        margin: 0 10px;
+        width: 110px;
+        height: 100px;
+        margin: 0 5px;
     }
 
     .square img {
-        max-width: 200px;
+        max-width: 110px;
         width: 100%;
-        height: 90px;
+        height: 100px;
     }
 
     figcaption {
-        width:91px; 
-        height:91px;
+        width:101px; 
+        height:100px;
     }
     figcaption i.fab { 
         font-size:1.5rem;
-        line-height:91px; 
+        line-height:101px; 
     }
 
 
@@ -2118,5 +2130,553 @@ height: 0%;
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
-@media all and (max-width:479px) { }
+@media all and (max-width:479px) { 
+    #main_container {
+        margin-bottom: 60px;
+    }
+
+    /* 비즈니스 */
+    .business_content {
+        max-width: 300px;
+        margin-top: 60px;
+    }
+
+    /* 비즈니스_타이틀 */
+    .business_content .title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .business_content .title h1 {
+        font-size: 2.0rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .business_content .title p {
+        font-size: 1.0rem;
+        margin-bottom: 5px;
+    }
+
+    /* 카드-애니메이션효과 */
+    .business_content .business_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_box {
+        box-shadow: 0 15px 25px rgba(65, 65, 65, 0.2);
+        width: 200px;
+        border-radius: 30px;
+        height: 320px;  
+        margin-top: 10px;
+    }
+
+    .business_image {
+        z-index: 2;
+        height: 320px;
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .busin_text:first-of-type {
+        position: absolute;
+        top: 400px;
+        width: 200px;
+        height: 320px;
+    }
+
+    .busin_text h4 {
+        position: absolute;
+        top: 20px;
+        width: 200px;
+        height: 320px;
+    }
+
+    .busin_text p {
+        position: absolute;
+        top: 240px;
+        left: 20px;
+        font-size: 1.0rem;
+        width: 200px;
+        height: 320px;
+    }
+
+    .responsive_text1 h4 {
+        position: absolute;
+        top: 340px;
+        width: 200px;
+        height: 320px;
+    }
+
+    .responsive_text1 p {
+        position: absolute;
+        top: 570px;
+        left: 20px;
+        font-size: 1.0rem;
+    }
+
+    .responsive_text2 h4 {
+        position: absolute;
+        top: 660px;
+        width: 200px;
+        height: 320px;
+    }
+
+    .responsive_text2 p {
+        position: absolute;
+        top: 900px;
+        left: 20px;
+        font-size: 1.0rem;
+    }
+
+    .responsive_text3 h4 {
+        position: absolute;
+        top: 980px;
+        width: 200px;
+        height: 320px;
+    }
+
+    .responsive_text3 p {
+        position: absolute;
+        top: 1220px;
+        left: 20px;
+        font-size: 1.0rem;
+    }
+
+    /* 상품 */
+    .product_content {
+        max-width: 310px;
+        margin-top: 60px;
+    }
+
+    /* 상품_슬라이드 박스 */
+    /* 타이틀 */
+    .product_content .food_content .title {
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .product_content .food_content .title h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .product_content .food_content .title p {
+        font-size: 1.0rem;
+    }
+
+    /* 슬라이드전체박스 */
+    .food_content {
+        max-width: 310px;
+        width: 100%;
+        height: 350px;
+        background: #FFDF3E;
+        margin-bottom: 90px;
+    }
+
+    /* 상품_슬라이드 아이콘 버튼 */
+    .swiper1 {
+        margin-top: 138px;
+    }
+
+    .food_content .food_icon {
+        position: absolute;
+        top: 90px;
+    }
+
+    .icon_box {
+        width: 95px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .food_content .food_icon .icon_box i.fas {
+        font-size: 1.5rem;
+    }
+
+    .food_content .food_icon .icon_box:hover i.fas{
+        font-size: 1.8rem;
+    }
+
+    .food_content .food_icon .icon_box i.fa-fish {
+        left: 28px;
+    }
+
+    .food_content .food_icon .icon_box p {
+        padding-top: 5px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .food_content .food_icon .icon_box:hover p {
+        font-size: 0.6rem;
+    }
+
+    /* 더보기 */
+    .food_content .more_btn {
+        position: absolute;
+        bottom: 30px;
+        left: 140px;
+    }
+
+    .more_btn {
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.3rem;
+        padding-left: 23px;
+    }
+
+    /* 슬라이드 */
+    .swiper-container .swiper-slide .food_slide {
+        max-width: 80px;
+        height: 80px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .swiper-container .swiper-slide .food_slide img {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    /* 오른쪽 초록색 박스 */
+    .food_box {
+        max-width: 310px;
+        width: 100%;
+        height: 430px;
+        left: 0;
+    }
+
+
+    /* 서비스 */
+    /* 타이틀 */
+    .service_content {
+        max-width: 310px;
+        width: 100%;
+    }
+
+    .service_content .title {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .service_content .title h1 {
+        font-size: 2.0rem;
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+
+    /* 행동솔루션 */
+    .service1 {
+        flex-direction: column;
+        margin-bottom: 30px;
+        height: 550px;
+    }
+
+    .service1 img {
+        width: 100%;
+        max-width: 310px;
+        height: 410px;
+    }
+
+    .service2 {
+        flex-direction: column;
+        margin-bottom: 60px;     
+        height: 550px;
+    }
+
+    .service2 img {
+        width: 100%;
+        max-width: 310px;
+        height: 410px;
+    }
+
+    /* 애니메이션 효과_글씨 나타남 */
+    .service1 h3 {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 160px;
+        left: 120px;
+    }
+
+    .service2 h3 {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 160px;
+        right: 100px;
+    }
+
+    /* 행동솔루션 텍스트박스 */
+    .text_box {
+        position: relative;
+        width: 300px;
+        height: 240px;
+    }
+
+    .text_box p {
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    /* 텍스트박스-애니메이션 */
+    .service1 .wave {
+        top: 380px;
+        right: 80px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .service2 .wave {
+        top: 380px;
+        left: 50px;
+        width: 180px;
+        height: 180px;
+    }
+
+
+    /* 띠배너 모바일버전 */
+    .banner_box .pc_banner { display: none; }
+    .banner_box .mobile_banner { display: block; }
+
+    .banner_box .mobile_banner {
+        width: 100%;
+    }
+
+
+    /* 리뷰 */
+    /* 고객리뷰 */
+    .review_container {
+        height: 800px;
+        margin-top: 125px;
+    }
+
+    /* 왼쪽 초록색 박스 */
+    .review_box {
+        position: absolute;
+        width: 100%;
+        height: 760px;
+        top: -40px;
+    }
+
+    /* 리뷰-타이틀 */
+    .review_content {
+        width: 100%;
+    }
+
+    .review_content .title { margin-bottom: 30px; }
+
+    .review_content .title h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .review_content .title p { font-size: 1.0rem; }
+
+    /* 더보기 */
+    .review_content .review_btn {
+        position: absolute;
+        bottom: 130px;
+        left: 160px;
+        flex-direction: column;
+    }
+
+    /* 리뷰카드 */
+    .review_content .review_cards {
+        margin-top: 50px;
+        margin-left: 40px;
+        width: 100%;
+        max-width: 200px;
+        height: 500px;
+    }
+    .review_cards { flex-direction: column; }
+
+    .review_cards .costomer_square {
+        width: 100%;
+        max-width: 200px;
+        height: 165px;
+        padding: 0 10px;
+    }
+
+    .review_cards .costomer_square img {
+        max-width: 80px;
+        width: 100%;
+        height: 80px;
+        float: left;
+        margin-top: 33px;
+    }
+
+    .review_cards .costomer_square .title {
+        margin-top: 35px;
+        margin-left: 83px;
+        width: 80px;
+        height: 50px;
+    }
+
+    .review_cards .costomer_square .title h3 {
+        font-size: 0.8rem;
+        padding-bottom: 5px;
+    }
+
+    .review_cards .costomer_square .title p {
+        font-size: 0.5rem;
+        line-height: 20px;
+    }
+
+
+
+    /* 매거진 */
+    .magazine_container {
+        height: 1900px;
+    }
+
+    .magazine_container::before {
+        top: 50%;
+        left: 1%;
+        font-size: 6em;
+    }
+
+    .magazine_wrap {
+        max-width: 310px;
+        height: 1900px;
+    }
+
+    /* jarallax 이미지 */
+    .magazine_container .imges_container .imgBx {
+        width: 100%;
+        max-width: 310px;
+        height: 430px;
+        overflow-x: hidden;
+        margin-top: 120px;
+    }
+
+    .magazine_container .imges_container .cat {
+        width: 100%;
+        max-width: 310px;
+        height: 430px;
+        overflow-x: hidden;
+    }
+
+    .magazine_container .imges_container .imgBx img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 310px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .magazine_container .imges_container .imges_text {
+        left: 120px;
+        margin-top: 400px;
+        max-width: 230px;
+        height: 80px;
+    }
+
+    .magazine_container .imges_container .imges_text p {
+        font-size: 0.6rem;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 8px;
+    }
+
+
+    /* 작은배너 */
+    .s_banner_container {
+        margin: 60px 0;
+        flex-wrap: wrap;
+    }
+
+    .s_banner_box { margin-top: 10px; }
+
+    .s_banner_box .banner_title {
+        top: 40px;
+        left: 10px;
+    }
+    
+    .s_banner_box h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .s_banner_box .banner_text {
+        top: 65px;
+        left: 10px;
+    }
+    
+    .s_banner_box p {
+        font-size: 1.0rem;
+        font-weight: 500;
+    }
+    
+    .s_banner_box .text_ani {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    
+    .s_banner_box .text_ani:hover {
+        font-size: 1.7rem;
+    }
+    
+    .s_banner_box hr {
+        position: absolute;
+        top: 54px;
+        right: 54px;
+        width: 30px;
+    }
+
+    
+    /* sns_컨텐츠 카드 */
+    .sns_container { height: 280px; }
+    .sns_container .sns_content {
+        max-width: 768px;
+        height: 280px;
+    }
+
+    /* sns_타이틀 */
+    .sns_container .sns_content .title {
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .sns_container .sns_content .title h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .sns_container .sns_content .title p {
+        font-size: 1.0rem;
+    }
+
+    /* SNS컨텐츠박스 */
+    .sns_box { margin-top: 60px; }
+
+    .square {
+        width: 110px;
+        height: 100px;
+        margin: 0 3px;
+    }
+
+    .square img {
+        max-width: 89.25px;
+        width: 100%;
+        height: 89.25px;
+    }
+
+    figcaption {
+        width:90px; 
+        height:90px;
+    }
+    figcaption i.fab { 
+        font-size:1.5rem;
+        line-height:90px; 
+    }
+
+
+}
 
