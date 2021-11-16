@@ -149,12 +149,9 @@ ul { list-style: none; }
     display: none;
 }
 
-
-
 .lnb_menu > ul > li {
     padding: 10px 0;
     width: 100%;
-
 }
 
 .lnb_menu > ul > li > a {
@@ -171,12 +168,10 @@ ul { list-style: none; }
 
 .lnb_menu > ul > li:hover a { color:#fff; }
 
-
 .show { display: block; }
 .hide { display: none; }
 .appear { animation: fade-in 0.4s; }
 .disappear { animation: fade-out 0.4s; }
-
 
 @keyframes fade-in {
     from {
@@ -544,11 +539,11 @@ ul { list-style: none; }
         margin-left: -30px;
     }
 
-    .header_menu .gnb_menu li {
+    .header_menu .gnb_menu > li {
         padding: 0 15px;
     }
 
-    .header_menu .gnb_menu li a {
+    .header_menu .gnb_menu > li > a {
         font-size: 1.5rem;
         padding: 10px 5px;
     }
@@ -611,6 +606,22 @@ ul { list-style: none; }
     .header_even p {
         font-size: 2.5rem;
     }
+
+
+    /* 하위메뉴 */
+    .lnb_menu > ul > li {
+        padding: 10px 0;
+        width: 100%;
+    }
+    
+    .lnb_menu > ul > li > a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #fff;
+        padding: 10px 5px;
+    }
+    
+
 
     /* 푸터 */
     /* 푸터_gnb : 언어설정, sns바로가기 등 */
@@ -852,7 +863,9 @@ ul { list-style: none; }
     .topBtn img {
         width: 50%;
         margin-top: 10px;
-    }  
+    }
+
+
 
 
 
