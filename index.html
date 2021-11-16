@@ -22,11 +22,50 @@
                 <a href="#" alt="로고 이미지를 누르면 홈페이지 메인으로 돌아갑니다."><img src="./images/WITHNYANG-logo-white.png" alt="위드냥로고"></a>
             </div>
             <ul class="gnb_menu">
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Media Hub</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Business</a>
+                    <div class="lnb_menu">
+                        <ul class="drodown">
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">생산공정</a></li>
+                            <li><a href="#">서비스</a></li>
+                            <li><a href="#">동네고양이</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Shop</a>
+                    <div class="lnb_menu">
+                        <ul class="drodown">
+                            <li><a href="#">주식</a></li>
+                            <li><a href="#">간식</a></li>
+                            <li><a href="#">영양제</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Service</a>
+                    <div class="lnb_menu">
+                        <ul class="drodown">
+                            <li><a href="#">고양이 행동학</a></li>
+                            <li><a href="#">상담 & 방문진료</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Media Hub</a>
+                    <div class="lnb_menu">
+                        <ul class="drodown">
+                            <li><a href="#">WITHNYANG호</a></li>
+                            <li><a href="#">소셜미디어</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a>
+                    <div class="lnb_menu">
+                        <ul class="drodown">
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">구조요청</a></li>
+                            <li><a href="#">후원문의</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         
             <!-- 서치바 -->
@@ -51,38 +90,6 @@
                 </div>
             </div>
         </nav>
-        
-        <!-- 하위메뉴 -->
-        <div class="lnb_container">
-            <div class="lnb">
-                <ul class="drodown1">
-                    <li><a href="#">브랜드</a></li>
-                    <li><a href="#">생산공정</a></li>
-                    <li><a href="#">서비스</a></li>
-                    <li><a href="#">동네고양이</a></li>
-                </ul>              
-            </div>
-            <div class="lnb">
-                <ul class="drodown2">
-                    <li><a href="#">주식</a></li>
-                    <li><a href="#">간식</a></li>
-                    <li><a href="#">영양제</a></li>
-                </ul>
-            </div>
-            <div class="lnb">
-                <ul class="drodown3">
-                    <li><a href="#">WITHNYANG소식지</a></li>
-                    <li><a href="#">소셜미디어</a></li>
-                </ul>
-            </div>
-            <div class="lnb">
-                <ul class="drodown4">
-                    <li><a href="#">1:1문의</a></li>
-                    <li><a href="#">구조요청</a></li>
-                    <li><a href="#">후원문의</a></li>
-                </ul>
-            </div>
-        </div>
 
         <!-- 헤더메인  -->
         <div class="swiper-container swiper">
@@ -576,9 +583,10 @@
     </section>
 
 
-    <a class="chatBtn" href="#">
-        <img src="./images/plus_btn.png" alt="채팅버튼">
-    </a>
+    <div class="chatBtn">
+        <button><img src="./images/plus_btn.png" alt="채팅버튼"></button>
+
+    </div>
 
     <a class="topBtn" href="#">
         <img src="./images/btn-gotop.png" alt="누르면 홈페이지 상단으로 이동합니다.">
@@ -642,6 +650,7 @@
     <script src="./js/jarallax.js"></script>
     <script src="./js/jarallax-element.js"></script>
 
+    <script src="./js/common.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/reponsive.js"></script>
     <script src="./js/slider_option.js"></script>
