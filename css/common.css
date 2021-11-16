@@ -141,14 +141,11 @@ ul { list-style: none; }
 
 /* 하위메뉴 */
 .lnb_menu {
-    /* display: none; */
     position: absolute;
-    top: 80px;
-    /* left: 0; */
-    /* margin-left: 10px; */
+    top: 51px;
     /* background: #fff; */
-    height: 180px;
-    width: 100%;
+    height: auto;
+    /* width: 100%; */
     display: none;
 }
 
@@ -159,21 +156,22 @@ ul { list-style: none; }
 .lnb_menu > ul > li {
     padding: 10px 0;
     width: 100%;
-    /* text-align: center; */
+
 }
 
 .lnb_menu > ul > li > a {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     padding: 10px 8px;
 }
 
-.lnb_menu > ul > li > a:hover {
-    color: #fff;
+.lnb_menu > ul > li:hover {
     background: #1A3431;
     transition: 0.6s all linear;
 }
+
+.lnb_menu > ul > li:hover a { color:#fff; }
 
 
 .show { display: block; }
@@ -680,14 +678,6 @@ ul { list-style: none; }
     .header_menu .shop_icon { display: none; }
 
 
-    /* 반응형_nav bar 만들기 위해서  header_menu : relative 메뉴아이콘에 앱솔루트*/
-    /* .header_menu {
-        flex-direction: column;
-        position: relative;
-        height: 270px;
-        align-items: flex-start;
-    } */
-
     .header_menu .trigger {
         position: absolute;
         top: 40px;
@@ -729,7 +719,7 @@ ul { list-style: none; }
     .chatBtn {
         width: 40px;
         height: 40px;
-        bottom: 50px;
+        bottom: 60px;
     }
     
     .chatBtn img {
@@ -747,27 +737,6 @@ ul { list-style: none; }
         width: 50%;
         margin-top: 15px;
     }
-
-
-    /* 사이드네브바 만들기 */
-    /* .header_menu .gnb_menu {
-        width: 50%;
-        height: 100vw;
-        background: #fff;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 0px;
-        z-index: 1;
-    }
-
-    .header_menu .gnb_menu li {
-        padding: 30px 20px;
-    }
-
-    .header_menu .gnb_menu li a {
-        color: #000;
-        font-size: 1.5rem;
-    } */
 
 
     /* 푸터 */
@@ -868,7 +837,7 @@ ul { list-style: none; }
     .chatBtn {
         width: 30px;
         height: 30px;
-        bottom: 35px;
+        bottom: 45px;
     }
     
     .chatBtn img {
@@ -1021,7 +990,7 @@ ul { list-style: none; }
     .chatBtn {
         width: 30px;
         height: 30px;
-        bottom: 35px;
+        bottom: 45px;
     }
     
     .chatBtn img {
