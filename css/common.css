@@ -149,9 +149,7 @@ ul { list-style: none; }
     display: none;
 }
 
-.lnb_menu > ul {
-    /* background: #fff; */
-}
+
 
 .lnb_menu > ul > li {
     padding: 10px 0;

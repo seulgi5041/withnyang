@@ -209,7 +209,9 @@
         </article>
 
     <!-- 상품 -->
-        <article class="product_content">           
+        <article class="product_content">    
+            <!-- 제품_초록색 빈 배경박스 -->
+            <div class="food_box"></div>       
             <!-- 푸드 콘텐트 / 간식 / 영양제 div 로 각각... -->
             <div class="food_content">
                 <div class="title">
@@ -217,8 +219,8 @@
                     <p>우리 아이에게 필요한 제품을 만나보세요.</p>
                 </div>
 
-                <div class="food_icon">
-                    <div class="icon_box">
+                <div class="food_icon tab-wrapper">
+                    <div class="icon_box" rel="tab01">
                         <button alt="사료 슬라이드 내용">
                             <i class="fas fa-fish"></i>
                             <i class="fas fa-hockey-puck"></i>
@@ -227,7 +229,7 @@
                     </div>
                     <div class="active_bar"></div>
 
-                    <div class="icon_box">
+                    <div class="icon_box" rel="tab02">
                         <button alt="간식 슬라이드 내용">
                             <i class="fas fa-cookie-bite"></i>
                             <p>간식(동결/습식)</p>
@@ -235,7 +237,7 @@
                     </div>
                     <div class="active_bar"></div>
 
-                    <div class="icon_box">
+                    <div class="icon_box" rel="tab03">
                         <button alt="영양제 슬라이드 내용">
                             <i class="fas fa-capsules"></i>
                             <p>영양제</p>
@@ -249,81 +251,196 @@
                 </div>
 
                 <!-- 슬라이드 -->
-                <div class="swiper-container swiper1" style="margin-top: 120px;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product1.png" alt="제품1">
-                                </a>
+                <!-- tab1_사료 -->
+                <div class="tab-contents tab01">
+                    <div class="swiper-container swiper1" style="margin-top: 120px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product1.png" alt="제품1">
+                                    </a>
+                                </div>
                             </div>
-                    
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product2.png" alt="제품2">
-                                </a>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product2.png" alt="제품2">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product3.png" alt="제품3">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product4.png" alt="제품4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product5.png" alt="제품5">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product6.png" alt="제품6">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product7.png" alt="제품7">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product8.png" alt="제품8">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product9.png" alt="제품9">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/product10.png" alt="제품10">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product3.png" alt="제품3">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product4.png" alt="제품4">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product5.png" alt="제품5">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product1.png" alt="제품1">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product1.png" alt="제품1">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product1.png" alt="제품1">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="food_slide">
-                                <a href="#">
-                                    <img src="../images/product1.png" alt="제품1">
-                                </a>
-                            </div>
-                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next pro-button-next"></div>
+                        <div class="swiper-button-prev pro-button-prev"></div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next pro-button-next"></div>
-                    <div class="swiper-button-prev pro-button-prev"></div>
                 </div>
-            </div>
 
-            <!-- 초록색 빈 배경박스 -->
-            <div class="food_box"></div>
+                <!-- 슬라이드 -->
+                <!-- tab2_간식 -->
+                <div class="tab-contents tab02">
+                    <div class="swiper-container swiper2" style="margin-top: 120px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak1_chicken.png" alt="간식1">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak2_chu.png" alt="간식2">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak3_chu.png" alt="간식3">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak4_chu.png" alt="간식4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak5_caw.png" alt="간식5">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak6_fish.png" alt="간식6">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak7_milk.png" alt="간식7">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/snak8_fish.png" alt="간식8">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next pro-button-next"></div>
+                        <div class="swiper-button-prev pro-button-prev"></div>
+                    </div>
+                </div>
+
+                <!-- 슬라이드 -->
+                <!-- tab3_영양제 -->
+                <div class="tab-contents tab03">
+                    <div class="swiper-container swiper3" style="margin-top: 120px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/healt1.png" alt="영양제1">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/healt2.png" alt="영양제2">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/healt3.png" alt="영양제3">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="food_slide">
+                                    <a href="#">
+                                        <img src="./images/healt4.png" alt="영양제4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next pro-button-next"></div>
+                        <div class="swiper-button-prev pro-button-prev"></div>
+                    </div>
+                </div>
+
+            
         </article>
 
     <!-- 서비스 -->
