@@ -32,3 +32,11 @@ $(function(){
 });
 
 
+// 푸터 언어창
+$(function(){
+    $('.lang p').click(function(){
+        $('.eng').toggle();
+    
+    });
+});
+

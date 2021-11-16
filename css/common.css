@@ -474,11 +474,6 @@ ul { list-style: none; }
     right: -50%;   
 }
 
-/* #mobile_menu .is-active {
-    position: absolute;
-    right: 20px;
-} */
-
 #mobile_menu .menu_wrap {
     position: absolute;
     top: 80px;
@@ -518,11 +513,6 @@ ul { list-style: none; }
 
 
 
-
-
-
-
-
 /* 푸터 */
 #main_footer {
     margin: 0 auto;
@@ -557,10 +547,22 @@ ul { list-style: none; }
     height: 95px;
 }
 
-.footer_gnb .lang a {
+.footer_gnb .lang p {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 95px;
+    color: #555555;
+}
+
+.footer_gnb .lang .eng { 
+    display: none; 
+    position: absolute;
+    top: 70px;
+}
+
+.footer_gnb .lang .eng a {
+    font-size: 1.6rem;
+    font-weight: 600;
     color: #555555;
 }
 
@@ -781,9 +783,21 @@ ul { list-style: none; }
         padding: 0 20px;
     }
 
-    .footer_gnb .lang a {
+    .footer_gnb .lang p {
         font-size: 1.3rem;
     }
+
+    .footer_gnb .lang .eng { 
+        position: absolute;
+        top: 70px;
+    }
+    
+    .footer_gnb .lang .eng a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #555555;
+    }
+    
 
     .footer_gnb .footer_sns a {
         font-size: 1.3rem;
@@ -938,8 +952,19 @@ ul { list-style: none; }
         padding: 0 20px;
     }
 
-    .footer_gnb .lang a {
+    .footer_gnb .lang p {
         font-size: 1.3rem;
+    }
+
+    .footer_gnb .lang .eng { 
+        position: absolute;
+        top: 45px;
+    }
+    
+    .footer_gnb .lang .eng a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #555555;
     }
 
     .footer_gnb .footer_sns a {
@@ -1106,8 +1131,19 @@ ul { list-style: none; }
         padding: 0 10px;
     }
 
-    .footer_gnb .lang a {
+    .footer_gnb .lang p {
         font-size: 1.2rem;
+    }
+
+    .footer_gnb .lang .eng { 
+        position: absolute;
+        top: 48px;
+    }
+    
+    .footer_gnb .lang .eng a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #555555;
     }
 
     .footer_gnb .footer_sns a {
@@ -1292,8 +1328,19 @@ ul { list-style: none; }
         padding: 0 6px;
     }
 
-    .footer_gnb .lang a {
+    .footer_gnb .lang p {
         font-size: 1.0rem;
+    }
+
+    .footer_gnb .lang .eng { 
+        position: absolute;
+        top: 48px;
+    }
+    
+    .footer_gnb .lang .eng a {
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: #555555;
     }
 
     .footer_gnb .footer_sns a {
