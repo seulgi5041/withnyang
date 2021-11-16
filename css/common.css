@@ -606,9 +606,20 @@ ul { list-style: none; }
     .header_menu .login { display: none; }
     .header_menu .shop_icon { display: none; }
 
+
+    /* 반응형_nav bar 만들기 위해서  header_menu : relative 메뉴아이콘에 앱솔루트*/
+    /* .header_menu {
+        flex-direction: column;
+        position: relative;
+        height: 270px;
+        align-items: flex-start;
+    } */
+
     .header_menu .trigger {
+        position: absolute;
+        top: 40px;
+        right: 20px;
         display: block;
-        margin-right: 20px;
     }
 
     /* 헤더 타이틀 */
@@ -662,9 +673,28 @@ ul { list-style: none; }
     .topBtn img {
         width: 50%;
         margin-top: 15px;
-    }  
+    }
 
 
+    /* 사이드네브바 만들기 */
+    /* .header_menu .gnb_menu {
+        width: 50%;
+        height: 100vw;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0px;
+        z-index: 1;
+    }
+
+    .header_menu .gnb_menu li {
+        padding: 30px 20px;
+    }
+
+    .header_menu .gnb_menu li a {
+        color: #000;
+        font-size: 1.5rem;
+    } */
 
 
     /* 푸터 */
@@ -884,12 +914,31 @@ ul { list-style: none; }
         display: block;
         margin-right: 20px;
     }
-
+    
     .hamburger .line{
-        width: 30px;
-        height: 5px;
-        margin: 8px auto;
+        width: 25px;
+        height: 3px;
+        margin: 4px auto;
     }
+    
+    #hamburger-1.is-active .line:nth-child(2){
+        opacity: 0;
+    }
+    
+    #hamburger-1.is-active .line:nth-child(1){
+        -webkit-transform: translateY(7px) rotate(45deg);
+        -ms-transform: translateY(7px) rotate(45deg);
+        -o-transform: translateY(7px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    #hamburger-1.is-active .line:nth-child(3){
+        -webkit-transform: translateY(-7px) rotate(-45deg);
+        -ms-transform: translateY(-7px) rotate(-45deg);
+        -o-transform: translateY(-7px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
 
     .header_title { display: none; }
     .header_even { display: none; }
