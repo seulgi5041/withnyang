@@ -5,7 +5,7 @@
     margin: 0; padding: 0; 
     font-family: 'DM Sans', Arial, 'sans-serif';
 }
-html { 
+html {
     font-size:62.5%;
     background-color: #fff;
     color: #000;
@@ -319,38 +319,119 @@ ul { list-style: none; }
 
 
 /* 화면 오른쪽-button */
-/* 채팅버튼 */
-.chatBtn {
+/* 플러스버튼-누르면 채팅버튼, 지도버튼 나옴 */
+.plusBtn {
     position: fixed;
     bottom: 80px;
     right: 20px;
-
     width: 60px;
     height: 60px;
     background: #2B41A7;
-
     z-index: 2;
 }
 
-.chatBtn button {
+.plusBtn button {
+    width: 60px;
+    height: 60px;
     border: 0;
     background: transparent;
 }
 
-.chatBtn img {
+.plusBtn img {
     display: block;
     margin: 0 auto;
     width: 60px;
     height: 60px;
-
-    transition: 0.5s all linear;
 }
 
-.chatBtn img:hover {
-    /* cursor: pointer; */
-    transform: rotate(45deg);
+
+/* 채팅버튼 */
+.chatBtn {
+    display: none;
+
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #2B41A7;
+    z-index: 2;
+    transition: 0.5s;
 }
 
+.chatBtn:hover {
+    width: 200px;
+}
+
+.chatBtn button {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: transparent;
+}
+
+.chatBtn button i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* 맵버튼 */
+.mapBtn {
+    display: none;
+
+    position: fixed;
+    bottom: 220px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #2B41A7;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.mapBtn:hover { width: 200px; }
+
+.mapBtn button {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: transparent;
+}
+
+.mapBtn button i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* 예약 */
+.bookBtn {
+    display: none;
+
+    position: fixed;
+    bottom: 290px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #2B41A7;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.bookBtn:hover { 
+    width: 200px; 
+}
+
+.bookBtn button {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: transparent;
+}
+
+.bookBtn button i {
+    font-size: 3rem;
+    color: #fff;
+}
 
 
 /* 상단버튼 */
@@ -372,6 +453,72 @@ ul { list-style: none; }
     margin: 0 auto;
     margin-top: 20px;
 }  
+
+
+/* 모바일메뉴 */
+.menu_bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: none;
+}
+#mobile_menu{
+    display: none;
+    width: 50%;
+    height: 100%;
+    background: #e98282;
+    position: absolute;
+    top:0;
+    right: -50%;   
+}
+
+/* #mobile_menu .is-active {
+    position: absolute;
+    right: 20px;
+} */
+
+#mobile_menu .menu_wrap {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
+#mobile_menu .menu_wrap > li {
+    padding: 20px 10px;
+}
+
+#mobile_menu .menu_wrap > li a {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#mobile_menu .login {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+
+#mobile_menu .login a {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#mobile_menu .shop_icon {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+}
+
+#mobile_menu .shop_icon i {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+
+
 
 
 
@@ -657,10 +804,6 @@ ul { list-style: none; }
         padding: 8px 20px;
     }
 
-    /* .footer_lnb .footer_title li {
-        height: 21px;
-    } */
-
 }
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -725,17 +868,50 @@ ul { list-style: none; }
 
 
      /* 상단+버튼 */
-    .chatBtn {
+    .plusBtn {
         width: 40px;
         height: 40px;
         bottom: 60px;
     }
-    
-    .chatBtn img {
+    .plusBtn button {
+        width: 40px;
+        height: 40px;
+    }
+    .plusBtn img {
         width: 40px;
         height: 40px;
     }  
-    
+    .chatBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 110px;
+    }
+    .chatBtn button {
+        width: 40px;
+        height: 40px;
+    }
+    .chatBtn button i { font-size: 2.5rem; }
+    .mapBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 160px;
+    }
+    .mapBtn button {
+        width: 40px;
+        height: 40px;
+    }
+    .mapBtn button i { font-size: 2.5rem; }
+    .bookBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 210px;
+    }
+    .bookBtn button {
+        width: 40px;
+        height: 40px;
+    }
+    .bookBtn button i { font-size: 2.5rem; }
+
     /* 상단버튼 */
     .topBtn {    
         width: 40px;
@@ -843,16 +1019,53 @@ ul { list-style: none; }
 
 
     /* 상단+버튼 */
-    .chatBtn {
+    .plusBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 45px;
+    }
+
+    .plusBtn button {
         width: 30px;
         height: 30px;
         bottom: 45px;
     }
     
-    .chatBtn img {
+    .plusBtn img {
         width: 30px;
         height: 30px;
     }  
+
+    .chatBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 80px;
+    }
+    .chatBtn button {
+        width: 30px;
+        height: 30px;
+    }
+    .chatBtn button i { font-size: 2.0rem; }
+    .mapBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 115px;
+    }
+    .mapBtn button {
+        width: 30px;
+        height: 30px;
+    }
+    .mapBtn button i { font-size: 2.0rem; }
+    .bookBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 150px;
+    }
+    .bookBtn button {
+        width: 30px;
+        height: 30px;
+    }
+    .bookBtn button i { font-size: 2.0rem; }
     
     /* 상단버튼 */
     .topBtn {    
@@ -864,11 +1077,6 @@ ul { list-style: none; }
         width: 50%;
         margin-top: 10px;
     }
-
-
-
-
-
 
 
     /* 푸터 */
@@ -998,16 +1206,53 @@ ul { list-style: none; }
 
 
     /* 상단+버튼 */
-    .chatBtn {
+    .plusBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 45px;
+    }
+
+    .plusBtn button {
         width: 30px;
         height: 30px;
         bottom: 45px;
     }
     
-    .chatBtn img {
+    .plusBtn img {
         width: 30px;
         height: 30px;
-    }  
+    }
+    
+    .chatBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 80px;
+    }
+    .chatBtn button {
+        width: 30px;
+        height: 30px;
+    }
+    .chatBtn button i { font-size: 2.0rem; }
+    .mapBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 115px;
+    }
+    .mapBtn button {
+        width: 30px;
+        height: 30px;
+    }
+    .mapBtn button i { font-size: 2.0rem; }
+    .bookBtn {
+        width: 30px;
+        height: 30px;
+        bottom: 150px;
+    }
+    .bookBtn button {
+        width: 30px;
+        height: 30px;
+    }
+    .bookBtn button i { font-size: 2.0rem; }
     
     /* 상단버튼 */
     .topBtn {    
@@ -1019,9 +1264,6 @@ ul { list-style: none; }
         width: 50%;
         margin-top: 10px;
     }  
-
-
-
 
     /* 푸터 */
     #main_footer {

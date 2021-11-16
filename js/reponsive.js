@@ -6,7 +6,6 @@ $(document).ready(function(){
 });
 
 
-
 //lnb 하위에 나오게 구현하기
 $(function(){
 
@@ -40,7 +39,7 @@ $(function(){
     });
 
 
-    // 넓이가 1023 이상이되면 하위메뉴 자동으로 해제
+    // 넓이가 1023 이하가되면 하위메뉴 자동으로 해제
     $(window).resize(function() {
         var width = $(window).width(); 
 
@@ -48,85 +47,55 @@ $(function(){
             $(".lnb_menu").hide();
         } 
     });
+});
 
 
 
-    /* 모바일 햄버거 메뉴 클릭 시 나오게 하기 */
-    $(".trigger").on({
-        "click" : function(){
+$(document).ready(function(){
 
-            if($(".hamburger").is(":visible")) {
-                /* 모바일 닫기 버튼 show */
+    $('.trigger').on('click', function(){
+        $('.menu_bg').show(); 
+        $('#mobile_menu').show().animate({
+            right:0
+        });
+        $('hamburger is-active').show();
+        // $('.trigger').hide();
+        $('.menu_bg').css("z-index","3");
+        $('#mobile_menu').css("z-index","3");
+    });
 
-
-                /* 모바일 전체 메뉴 show */
-                $("#main_header").hide();
-                $("#main_container").hide();
-                $("#main_footer").hide();
-                $(".topBtn").hide();
-                $(".chatBtn").hide();
-                $(".trigger").show();
-                $("#mobile_menu").show();
-                //#mobile_menu 하위 태그 초기화
-                $("#mobile_menu").empty(); 
-
-
-                var nav = $(".gnb_menu").clone();
-                // var sns = $(".sns").clone();
-                //복제한 nav를 넣어서 id값이 모바일메뉴인 아이에 덧붙여준다.
-                $("#mobile_menu").append(nav);
-                $("#mobile_menu").show();
-                
-
-
-
-                // $("#mobile_menu").append(sns);
-                // $("#mobile_menu").show();
-                
-            } else {
-                // 닫기 메뉴 버튼이 보일때
-                /* 모바일 햄버거 버튼 show */ 
-
-                /* 전체 메뉴 show */
-                $("#main_header").height();
-                $("#main_content").show();
-                $("#main_footer").show();
-                $(".topBtn").show();
-                $(".chatBtn").show();
-                $("#mobile_menu").hide();
-            }
-
-        }
+    $('.is-active').on('click', function(){
+        $('.menu_bg').hide();
+        $('.hamburger').show();
+        // $('.hamburger').hide();
+        $('#mobile_menu').animate({
+            right: '-' + 50 + '%'
+        },
+        function(){
+        $('#mobile_menu').hide(); 
+        }); 
 
     });
 
 
-    //모바일 버전 벗어나면 해제하기.
+     //모바일 버전 벗어나면 해제하기.
     $(window).resize(function() {
         var width = $(window).width(); //사용자가 보는 뷰포트 넓이 구하기
 
-        // 넓이가 767 이상이되면 모바일버전 해제 후 pc버전으로 변경
+        // 넓이가 1023 이상이되면 모바일버전 해제 후 pc버전으로 변경
         if(width > 1023) {
-            $(".nav li").eq(4).show()
-
+            
             if($("#mobile_menu").is(":visible")) {
-                $(".moblie_hamburger").show();
-                $(".moblie_close").hide();
-
+                $(".hamburger").show();
+    
                 /* 모바일 전체 메뉴 show */
-                $("#main_header").height();
-                $("#main_content").show();
-                $("#main_footer").show();
-
+                $('.menu_bg').hide();
                 $("#mobile_menu").hide();
 
             }
         }
     });
 
-
-
-
-
 });
+
 

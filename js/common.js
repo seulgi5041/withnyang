@@ -22,3 +22,13 @@ $(function (){
 
 
 // chatBtn 버튼 누르면 위에 버튼 나옴
+$(function(){
+    $('.plusBtn').click(function(){
+        $('.bookBtn').toggle();
+        $('.mapBtn').toggle();
+        $('.chatBtn').toggle();
+    
+    });
+});
+
+
