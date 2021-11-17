@@ -368,7 +368,6 @@ ul { list-style: none; }
 /* 채팅버튼 */
 .chatBtn {
     display: none;
-
     position: fixed;
     bottom: 150px;
     right: 20px;
@@ -379,12 +378,18 @@ ul { list-style: none; }
     transition: 0.5s;
 }
 
-.chatBtn::after {
-    content: '상담';
-}
-
 .chatBtn:hover {
     width: 200px;
+}
+
+.chatBtn:hover::after {
+    content: '상담하기';
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
 }
 
 .chatBtn button {
@@ -398,7 +403,6 @@ ul { list-style: none; }
     font-size: 3rem;
     color: #fff;
 }
-
 
 
 /* 맵버튼 */
@@ -416,6 +420,15 @@ ul { list-style: none; }
 }
 
 .mapBtn:hover { width: 200px; }
+.mapBtn:hover::after {
+    content: '우리동네동물병원';
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+}
 
 .mapBtn button {
     width: 60px;
@@ -445,6 +458,15 @@ ul { list-style: none; }
 
 .bookBtn:hover { 
     width: 200px; 
+}
+.bookBtn:hover::after {
+    content: '예약하기';
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
 }
 
 .bookBtn button {
@@ -927,6 +949,12 @@ ul { list-style: none; }
         bottom: 110px;
     }
     .chatBtn:hover { width: 130px; }
+    .chatBtn:hover::after {
+        font-size: 1.3rem;
+        font-weight: 600;
+        top: 10px;
+    }
+    
     .chatBtn button {
         width: 40px;
         height: 40px;
@@ -938,6 +966,11 @@ ul { list-style: none; }
         bottom: 160px;
     }
     .mapBtn:hover { width: 130px; }
+    .mapBtn:hover::after {
+        font-size: 1.0rem;
+        font-weight: 600;
+        top: 13px;
+    }
     .mapBtn button {
         width: 40px;
         height: 40px;
@@ -949,6 +982,11 @@ ul { list-style: none; }
         bottom: 210px;
     }
     .bookBtn:hover { width: 130px; }
+    .bookBtn:hover::after {
+        font-size: 1.3rem;
+        font-weight: 600;
+        top: 10px;
+    }
     .bookBtn button {
         width: 40px;
         height: 40px;
@@ -1096,6 +1134,11 @@ ul { list-style: none; }
         bottom: 80px;
     }
     .chatBtn:hover { width: 100px; }
+    .chatBtn:hover::after {
+        font-size: 1.0rem;
+        font-weight: 600;
+        top: 8px;
+    }
     .chatBtn button {
         width: 30px;
         height: 30px;
@@ -1107,6 +1150,12 @@ ul { list-style: none; }
         bottom: 115px;
     }
     .mapBtn:hover { width: 100px; }
+    .mapBtn:hover::after {
+        content: '동물병원찾기';
+        font-size: 0.7rem;
+        font-weight: 600;
+        top: 8px;
+    }
     .mapBtn button {
         width: 30px;
         height: 30px;
@@ -1118,6 +1167,11 @@ ul { list-style: none; }
         bottom: 150px;
     }
     .bookBtn:hover { width: 100px; }
+    .bookBtn:hover::after {
+        font-size: 1.0rem;
+        font-weight: 600;
+        top: 8px;
+    }
     .bookBtn button {
         width: 30px;
         height: 30px;
@@ -1300,7 +1354,14 @@ ul { list-style: none; }
         width: 30px;
         height: 30px;
     }
+    .chatBtn:hover { width: 100px; }
+    .chatBtn:hover::after {
+        font-size: 1.0rem;
+        font-weight: 600;
+        top: 8px;
+    }
     .chatBtn button i { font-size: 2.0rem; }
+    
     .mapBtn {
         width: 30px;
         height: 30px;
@@ -1310,11 +1371,25 @@ ul { list-style: none; }
         width: 30px;
         height: 30px;
     }
+    .mapBtn:hover { width: 100px; }
+    .mapBtn:hover::after {
+        content: '동물병원찾기';
+        font-size: 0.7rem;
+        font-weight: 600;
+        top: 8px;
+    }
+
     .mapBtn button i { font-size: 2.0rem; }
     .bookBtn {
         width: 30px;
         height: 30px;
         bottom: 150px;
+    }
+    .bookBtn:hover { width: 100px; }
+    .bookBtn:hover::after {
+        font-size: 1.0rem;
+        font-weight: 600;
+        top: 8px;
     }
     .bookBtn button {
         width: 30px;

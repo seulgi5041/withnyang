@@ -54,6 +54,7 @@ $(function(){
 
 
 
+// 타블릿,모바일버전 메뉴보기
 $(document).ready(function(){
 
     $('.trigger').on('click', function(){
