@@ -10,6 +10,7 @@ html {
     background-color: #fff;
     color: #000;
 }
+body {overflow-x: hidden; }
 a { 
     text-decoration: none !important; 
     color: #fff;
@@ -468,7 +469,7 @@ ul { list-style: none; }
     display: none;
     width: 50%;
     height: 100%;
-    background: #e98282;
+    background: #1A3431;
     position: absolute;
     top:0;
     right: -50%;   
@@ -900,6 +901,7 @@ ul { list-style: none; }
         height: 40px;
         bottom: 110px;
     }
+    .chatBtn:hover { width: 130px; }
     .chatBtn button {
         width: 40px;
         height: 40px;
@@ -910,6 +912,7 @@ ul { list-style: none; }
         height: 40px;
         bottom: 160px;
     }
+    .mapBtn:hover { width: 130px; }
     .mapBtn button {
         width: 40px;
         height: 40px;
@@ -920,6 +923,7 @@ ul { list-style: none; }
         height: 40px;
         bottom: 210px;
     }
+    .bookBtn:hover { width: 130px; }
     .bookBtn button {
         width: 40px;
         height: 40px;
@@ -1066,6 +1070,7 @@ ul { list-style: none; }
         height: 30px;
         bottom: 80px;
     }
+    .chatBtn:hover { width: 100px; }
     .chatBtn button {
         width: 30px;
         height: 30px;
@@ -1076,6 +1081,7 @@ ul { list-style: none; }
         height: 30px;
         bottom: 115px;
     }
+    .mapBtn:hover { width: 100px; }
     .mapBtn button {
         width: 30px;
         height: 30px;
@@ -1086,6 +1092,7 @@ ul { list-style: none; }
         height: 30px;
         bottom: 150px;
     }
+    .bookBtn:hover { width: 100px; }
     .bookBtn button {
         width: 30px;
         height: 30px;

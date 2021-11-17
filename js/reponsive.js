@@ -58,21 +58,20 @@ $(document).ready(function(){
         $('#mobile_menu').show().animate({
             right:0
         });
-        $('hamburger is-active').show();
-        // $('.trigger').hide();
+
+        $('.hamburger').show();
         $('.menu_bg').css("z-index","3");
         $('#mobile_menu').css("z-index","3");
     });
 
     $('.is-active').on('click', function(){
         $('.menu_bg').hide();
-        $('.hamburger').show();
-        // $('.hamburger').hide();
         $('#mobile_menu').animate({
             right: '-' + 50 + '%'
         },
-        function(){
-        $('#mobile_menu').hide(); 
+
+            function(){
+            $('#mobile_menu').hide(); 
         }); 
 
     });

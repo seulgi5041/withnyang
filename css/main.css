@@ -555,9 +555,12 @@ h1, h2, h3, h4, h5 {
     line-height: 20px;
 
     /* 후기 숨김처리 */
-    white-space: nowrap;
+    width: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -1077,6 +1080,8 @@ height: 0%;
         padding: 0 15px;
     }
 
+    
+
     .review_cards .costomer_square img {
         max-width: 210px;
         width: 100%;
@@ -1084,6 +1089,15 @@ height: 0%;
     }
 
     .review_cards .costomer_square .title { width: 210px; }
+
+    .review_cards .costomer_square .title p {
+        width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
 
     /* 더보기 */
     .review_content .review_btn {
@@ -1489,7 +1503,7 @@ height: 0%;
     }
 
     .review_cards .costomer_square .title {
-        margin-top: 35px;
+        margin-top: 45px;
         margin-left: 120px;
         width: 160px;
         height: 50px;
@@ -1503,7 +1517,15 @@ height: 0%;
     .review_cards .costomer_square .title p {
         font-size: 1.0rem;
         line-height: 20px;
+
+        width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
+
 
     /* 매거진 */
     .magazine_container {
@@ -1995,6 +2017,13 @@ height: 0%;
     .review_cards .costomer_square .title p {
         font-size: 1.0rem;
         line-height: 20px;
+
+        width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
 
@@ -2523,23 +2552,23 @@ height: 0%;
 
     .review_cards .costomer_square {
         width: 100%;
-        max-width: 200px;
+        /* max-width: 200px; */
         height: 165px;
         padding: 0 10px;
     }
 
     .review_cards .costomer_square img {
-        max-width: 80px;
+        max-width: 85px;
         width: 100%;
-        height: 80px;
+        height: 85px;
         float: left;
-        margin-top: 33px;
+        margin-top: 35px;
     }
 
     .review_cards .costomer_square .title {
         margin-top: 35px;
-        margin-left: 83px;
-        width: 80px;
+        margin-left: 90px;
+        width: 100px;
         height: 50px;
     }
 
@@ -2551,6 +2580,13 @@ height: 0%;
     .review_cards .costomer_square .title p {
         font-size: 0.5rem;
         line-height: 20px;
+
+        width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
 
