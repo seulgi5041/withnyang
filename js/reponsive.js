@@ -18,12 +18,13 @@ $(function(){
             // 실질적으로 보이는 부분. 위에 두개속성은 애니메이션 속성을 주기위한것임.
             // .show : 해당 태그의 display를 none에서 block으로 해주는 속성.
             $(".lnb_menu").show();
+            $("#lnb_bg").show();
 
-            $(".lnb_menu > .drodown1").css("z-index", "2");
-            $(".lnb_menu > .drodown2").css("z-index", "2");
-            $(".lnb_menu > .drodown3").css("z-index", "2");
-            $(".lnb_menu > .drodown4").css("z-index", "2");
-            $(".lnb_menu > .drodown5").css("z-index", "2");
+            // $(".lnb_menu > .drodown1").css("z-index", "2");
+            // $(".lnb_menu > .drodown2").css("z-index", "2");
+            // $(".lnb_menu > .drodown3").css("z-index", "2");
+            // $(".lnb_menu > .drodown4").css("z-index", "2");
+            // $(".lnb_menu > .drodown5").css("z-index", "2");
         },
 
         "mouseleave" : function() {
@@ -34,6 +35,7 @@ $(function(){
         "mouseleave" : function() {
                 $(".lnb_menu").removeClass("appear");
                 $(".lnb_menu").addClass("disappear");
+                $("#lnb_bg").hide();
                 $(".lnb_menu").hide();
         }
     });
@@ -45,6 +47,7 @@ $(function(){
 
         if(width < 1023) {
             $(".lnb_menu").hide();
+            $("#lnb_bg").hide();
         } 
     });
 });

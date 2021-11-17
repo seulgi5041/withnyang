@@ -34,11 +34,11 @@ ul { list-style: none; }
 }
 
 .header_menu .logo img {
-    max-width: 270px;
+    max-width: 265px;
     width: 100%;
     height: 130px;
 
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 /* 헤더메뉴 */
@@ -59,6 +59,7 @@ ul { list-style: none; }
     align-items: center;
     margin-top: 25px;
     margin-left: -80px;
+    z-index: 1;
 }
 
 .header_menu .gnb_menu > li {
@@ -140,34 +141,46 @@ ul { list-style: none; }
     font-size: 1.8rem;
 }
 
+
+/* 하위메뉴배경 */
+#lnb_bg {
+    background: #fff;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 99px;
+    display: none;
+}
+
+.show { display: block; }
+.hide { display: none; }
+
 /* 하위메뉴 */
 .lnb_menu {
     position: absolute;
     top: 51px;
-    /* background: #fff; */
     height: auto;
-    /* width: 100%; */
     display: none;
 }
 
-.lnb_menu > ul > li {
+.lnb_menu > .drodown > li {
     padding: 10px 0;
     width: 100%;
 }
 
-.lnb_menu > ul > li > a {
+.lnb_menu > .drodown > li > a {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
-    padding: 10px 8px;
+    color: #000;
+    /* padding: 10px 8px; */
 }
 
-.lnb_menu > ul > li:hover {
+.lnb_menu > .drodown > li:hover {
     background: #1A3431;
     transition: 0.6s all linear;
 }
 
-.lnb_menu > ul > li:hover a { color:#fff; }
+.lnb_menu > .drodown > li:hover a { color:#fff; }
 
 .show { display: block; }
 .hide { display: none; }
@@ -230,6 +243,10 @@ ul { list-style: none; }
     -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-13px) rotate(-45deg);
 }
+
+
+
+
 
 
 /* 헤더메인 */
@@ -319,6 +336,8 @@ ul { list-style: none; }
 
 
 
+
+
 /* 화면 오른쪽-button */
 /* 플러스버튼-누르면 채팅버튼, 지도버튼 나옴 */
 .plusBtn {
@@ -360,6 +379,10 @@ ul { list-style: none; }
     transition: 0.5s;
 }
 
+.chatBtn::after {
+    content: '상담';
+}
+
 .chatBtn:hover {
     width: 200px;
 }
@@ -375,6 +398,8 @@ ul { list-style: none; }
     font-size: 3rem;
     color: #fff;
 }
+
+
 
 /* 맵버튼 */
 .mapBtn {
