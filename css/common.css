@@ -602,7 +602,36 @@ ul { list-style: none; }
     height: 95px;
 }
 
-.footer_gnb .lang p {
+/* 언어셀렉트박스 */
+select {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #555;
+
+    padding: 2px 5px;
+
+    border: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+select:hover {
+    border-color: transparent;
+}
+
+
+select:focus {    
+    color: #555;
+    outline: none;
+}
+
+select:disabled {
+    opacity: 0.5;
+}
+
+/* .footer_gnb .lang p {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 95px;
@@ -619,7 +648,7 @@ ul { list-style: none; }
     font-size: 1.6rem;
     font-weight: 600;
     color: #555555;
-}
+} */
 
 .footer_gnb .footer_sns a {
     font-size: 1.6rem;

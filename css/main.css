@@ -2385,15 +2385,15 @@ height: 0%;
 
     /* 슬라이드 */
     .swiper-container .swiper-slide .food_slide {
-        max-width: 80px;
+        max-width: 60px;
         height: 80px;
         width: 100%;
         margin: 0 auto;
     }
 
     .swiper-container .swiper-slide .food_slide img {
-        max-width: 80px;
-        height: 80px;
+        max-width: 60px;
+        height: 60px;
     }
 
     /* 오른쪽 초록색 박스 */
