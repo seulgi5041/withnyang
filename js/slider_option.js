@@ -16,15 +16,15 @@ var swiper = new Swiper('.swiper', {
 
 
 var swiper1 = new Swiper('.tab01 .swiper1', {
-    slidesPerView: 1,
+    slidesPerView: 1, //480밑으로 떨어지면 1개면 보여짐
     breakpoints: {
-        480: { //640 이상일 경우
+        480: { //480 이상일 경우
             slidesPerView: 2, //레이아웃 2열
         },
-        768: { //640 이상일 경우
+        768: { //768 이상일 경우
             slidesPerView: 3, //레이아웃 2열
         },
-        1024: { //640 이상일 경우
+        1024: { //1024 이상일 경우
             slidesPerView: 5, //레이아웃 5열
         },
     }, 
@@ -38,15 +38,15 @@ var swiper1 = new Swiper('.tab01 .swiper1', {
 });
 
 var swiper2 = new Swiper('.tab02 .swiper2', {
-    slidesPerView: 1,
+    slidesPerView: 1, //480밑으로 떨어지면 1개면 보여짐
     breakpoints: {
-        480: { //640 이상일 경우
+        480: { //480 이상일 경우
             slidesPerView: 2, //레이아웃 2열
         },
-        768: { //640 이상일 경우
+        768: { //768 이상일 경우
             slidesPerView: 3, //레이아웃 2열
         },
-        1024: { //640 이상일 경우
+        1024: { //1024 이상일 경우
             slidesPerView: 5, //레이아웃 5열
         },
     }, 
@@ -63,15 +63,15 @@ var swiper2 = new Swiper('.tab02 .swiper2', {
 });
 
 var swiper3 = new Swiper('.tab03 .swiper3', {
-    slidesPerView: 1,
+    slidesPerView: 1, //480밑으로 떨어지면 1개면 보여짐
     breakpoints: {
-        480: { //640 이상일 경우
+        480: { //480 이상일 경우
             slidesPerView: 2, //레이아웃 2열
         },
-        768: { //640 이상일 경우
+        768: { //768 이상일 경우
             slidesPerView: 3, //레이아웃 2열
         },
-        1024: { //640 이상일 경우
+        1024: { //1024 이상일 경우
             slidesPerView: 5, //레이아웃 5열
         },
     }, 
