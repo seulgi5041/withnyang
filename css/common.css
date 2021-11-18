@@ -171,16 +171,22 @@ ul { list-style: none; }
 .lnb_menu > .drodown > li > a {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #555;
+    color: #1A3431;
+
+    transition: 0.6s;
     /* padding: 10px 8px; */
 }
 
-.lnb_menu > .drodown > li:hover {
+.lnb_menu > .drodown > li > a:hover {
+    font-weight: 700;
+}
+
+/* .lnb_menu > .drodown > li:hover {
     background: #1A3431;
     transition: 0.4s all linear;
 }
 
-.lnb_menu > .drodown > li:hover a { color:#fff; }
+.lnb_menu > .drodown > li:hover a { color:#fff; } */
 
 .show { display: block; }
 .hide { display: none; }
