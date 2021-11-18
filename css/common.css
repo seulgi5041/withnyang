@@ -607,11 +607,8 @@ select {
     font-size: 1.6rem;
     font-weight: 600;
     color: #555;
-
     padding: 2px 5px;
-
     font-family: "Font Awesome 5 Free";
-
     border: 0;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -636,26 +633,6 @@ select:disabled {
     opacity: 0.5;
 }
 
-
-
-/* .footer_gnb .lang p {
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 95px;
-    color: #555555;
-}
-
-.footer_gnb .lang .eng { 
-    display: none; 
-    position: absolute;
-    top: 70px;
-}
-
-.footer_gnb .lang .eng a {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #555555;
-} */
 
 .footer_gnb .footer_sns a {
     font-size: 1.6rem;
@@ -874,6 +851,24 @@ select:disabled {
         padding: 0 20px;
     }
 
+    select {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #555;
+        padding: 2px 5px;
+        font-family: "Font Awesome 5 Free";
+        border: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+    select .fa {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+    }
+
+/*     
     .footer_gnb .lang p {
         font-size: 1.3rem;
     }
@@ -887,8 +882,8 @@ select:disabled {
         font-size: 1.3rem;
         font-weight: 600;
         color: #555555;
-    }
-    
+    } 
+     */
 
     .footer_gnb .footer_sns a {
         font-size: 1.3rem;
@@ -1062,19 +1057,22 @@ select:disabled {
         padding: 0 20px;
     }
 
-    .footer_gnb .lang p {
-        font-size: 1.3rem;
-    }
-
-    .footer_gnb .lang .eng { 
-        position: absolute;
-        top: 45px;
-    }
-    
-    .footer_gnb .lang .eng a {
+    select {
+        /* margin-left: 10px; */
         font-size: 1.3rem;
         font-weight: 600;
-        color: #555555;
+        color: #555;
+        padding: 2px 5px;
+        font-family: "Font Awesome 5 Free";
+        border: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+    select .fa {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
     }
 
     .footer_gnb .footer_sns a {
@@ -1260,21 +1258,24 @@ select:disabled {
         padding: 0 10px;
     }
 
-    .footer_gnb .lang p {
-        font-size: 1.2rem;
-    }
-
-    .footer_gnb .lang .eng { 
-        position: absolute;
-        top: 48px;
-    }
-    
-    .footer_gnb .lang .eng a {
+    select {
+        /* margin-left: 10px; */
         font-size: 1.2rem;
         font-weight: 600;
-        color: #555555;
+        color: #555;
+        padding: 2px 5px;
+        font-family: "Font Awesome 5 Free";
+        border: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
     }
-
+    
+    select .fa {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+    }
+    
     .footer_gnb .footer_sns a {
         font-size: 1.2rem;
         padding: 0 10px;
@@ -1478,19 +1479,22 @@ select:disabled {
         padding: 0 6px;
     }
 
-    .footer_gnb .lang p {
-        font-size: 1.0rem;
-    }
-
-    .footer_gnb .lang .eng { 
-        position: absolute;
-        top: 48px;
+    select {
+        /* margin-left: 10px; */
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #555;
+        padding: 2px 5px;
+        font-family: "Font Awesome 5 Free";
+        border: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
     }
     
-    .footer_gnb .lang .eng a {
-        font-size: 1.0rem;
+    select .fa {
+        font-family: "Font Awesome 5 Free";
         font-weight: 600;
-        color: #555555;
     }
 
     .footer_gnb .footer_sns a {
