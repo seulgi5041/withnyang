@@ -1174,6 +1174,9 @@ select:disabled {
         height: 30px;
         bottom: 80px;
     }
+    /* .plus_show { display: block; }
+    .plus_hide { display: none; } */
+
     .chatBtn:hover { width: 100px; }
     .chatBtn:hover::after {
         font-size: 1.0rem;
@@ -1190,6 +1193,9 @@ select:disabled {
         height: 30px;
         bottom: 115px;
     }
+    /* .plus_show { display: block; }
+    .plus_hide { display: none; } */
+
     .mapBtn:hover { width: 100px; }
     .mapBtn:hover::after {
         content: '동물병원찾기';
@@ -1207,6 +1213,9 @@ select:disabled {
         height: 30px;
         bottom: 150px;
     }
+    /* .plus_show { display: block; }
+    .plus_hide { display: none; } */
+
     .bookBtn:hover { width: 100px; }
     .bookBtn:hover::after {
         font-size: 1.0rem;
@@ -1275,7 +1284,7 @@ select:disabled {
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
     }
-    
+
     .footer_gnb .footer_sns a {
         font-size: 1.2rem;
         padding: 0 10px;
