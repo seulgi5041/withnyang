@@ -732,6 +732,10 @@ select:disabled {
     color: #555;
 }
 
+.footer_lnb ul > li a {
+    color: #555;
+}
+
 
 
 
