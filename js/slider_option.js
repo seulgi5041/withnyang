@@ -16,7 +16,18 @@ var swiper = new Swiper('.swiper', {
 
 
 var swiper1 = new Swiper('.tab01 .swiper1', {
-    slidesPerView: 5, 
+    slidesPerView: 1,
+    breakpoints: {
+        480: { //640 이상일 경우
+            slidesPerView: 2, //레이아웃 2열
+        },
+        768: { //640 이상일 경우
+            slidesPerView: 3, //레이아웃 2열
+        },
+        1024: { //640 이상일 경우
+            slidesPerView: 5, //레이아웃 5열
+        },
+    }, 
     pagination: {
         el: '.tab01 .swiper-pagination',
     },
@@ -27,7 +38,18 @@ var swiper1 = new Swiper('.tab01 .swiper1', {
 });
 
 var swiper2 = new Swiper('.tab02 .swiper2', {
-    slidesPerView: 5,
+    slidesPerView: 1,
+    breakpoints: {
+        480: { //640 이상일 경우
+            slidesPerView: 2, //레이아웃 2열
+        },
+        768: { //640 이상일 경우
+            slidesPerView: 3, //레이아웃 2열
+        },
+        1024: { //640 이상일 경우
+            slidesPerView: 5, //레이아웃 5열
+        },
+    }, 
     pagination: {
         el: '.tab02 .swiper-pagination',
     },
@@ -41,7 +63,18 @@ var swiper2 = new Swiper('.tab02 .swiper2', {
 });
 
 var swiper3 = new Swiper('.tab03 .swiper3', {
-    slidesPerView: 5,
+    slidesPerView: 1,
+    breakpoints: {
+        480: { //640 이상일 경우
+            slidesPerView: 2, //레이아웃 2열
+        },
+        768: { //640 이상일 경우
+            slidesPerView: 3, //레이아웃 2열
+        },
+        1024: { //640 이상일 경우
+            slidesPerView: 5, //레이아웃 5열
+        },
+    }, 
     pagination: {
         el: '.tab03 .swiper-pagination',
     },

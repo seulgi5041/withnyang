@@ -1311,11 +1311,11 @@ height: 0%;
     .swiper-container { width: 100%; }
     .swiper1 { margin-top: 10px; }
     .swiper-container .swiper-slide .food_slide {
-        max-width: 160px;
-        height: 160px;
+        max-width: 180px;
+        height: 180px;
         width: 100%;
     }
-    .swiper-container .swiper-slide .food_slide img { max-width: 130px; }
+    .swiper-container .swiper-slide .food_slide img { max-width: 180px; }
 
     /* 상품_슬라이드 아이콘 버튼 */
     .icon_box {
@@ -1356,7 +1356,7 @@ height: 0%;
      /* 더보기 */
     .food_content .more_btn {
         bottom: 30px;
-        left: 350px;
+        left: 325px;
     }
 
     .more_btn {
@@ -1819,15 +1819,15 @@ height: 0%;
 
     /* 슬라이드 */
     .swiper-container .swiper-slide .food_slide {
-        max-width: 80px;
-        height: 80px;
+        max-width: 130px;
+        height: 130px;
         width: 100%;
         margin: 0 auto;
     }
 
     .swiper-container .swiper-slide .food_slide img {
-        max-width: 80px;
-        height: 80px;
+        max-width: 130px;
+        height: 130px;
     }
 
     /* 오른쪽 초록색 박스 */
@@ -2371,8 +2371,8 @@ height: 0%;
     /* 더보기 */
     .food_content .more_btn {
         position: absolute;
-        bottom: 30px;
-        left: 140px;
+        bottom: 10px;
+        left: 100px;
     }
 
     .more_btn {
@@ -2385,15 +2385,15 @@ height: 0%;
 
     /* 슬라이드 */
     .swiper-container .swiper-slide .food_slide {
-        max-width: 60px;
-        height: 80px;
+        max-width: 100px;
+        height: 100px;
         width: 100%;
         margin: 0 auto;
     }
 
     .swiper-container .swiper-slide .food_slide img {
-        max-width: 60px;
-        height: 60px;
+        max-width: 100px;
+        height: 100px;
     }
 
     /* 오른쪽 초록색 박스 */
@@ -2598,7 +2598,7 @@ height: 0%;
 
     .magazine_container::before {
         top: 50%;
-        left: 1%;
+        left: 8%;
         font-size: 6em;
     }
 
