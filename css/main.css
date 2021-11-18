@@ -160,6 +160,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .icon_box {
+    cursor: pointer;
+
     width: 229px;
     height: 55px;
     border-bottom: 1px solid #555;
@@ -171,6 +173,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .food_content .food_icon .icon_box i.fas {
+    cursor: pointer;
+    
     font-size: 2.0rem;
     color: #555;
     transition: 0.6s;
@@ -2352,6 +2356,7 @@ height: 0%;
 
     .food_content .food_icon .icon_box:hover i.fas{
         font-size: 1.8rem;
+        
     }
 
     .food_content .food_icon .icon_box i.fa-fish {

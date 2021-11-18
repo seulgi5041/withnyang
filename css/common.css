@@ -160,12 +160,17 @@ ul { list-style: none; }
     position: absolute;
     top: 51px;
     height: auto;
+    width: 95%;
     display: none;
+}
+
+.lnb_menu > .drodown {
+    width: 100%;
 }
 
 .lnb_menu > .drodown > li {
     padding: 10px 0;
-    padding-left: 10px;
+    /* padding-left: 8px; */
     width: 100%;
 }
 
@@ -173,6 +178,8 @@ ul { list-style: none; }
     font-size: 1.4rem;
     font-weight: 600;
     color: #1A3431;
+    padding: 10px 5px;
+    padding-bottom: 0;
     
     transition: 0.2s all linear;
 }
@@ -183,10 +190,10 @@ ul { list-style: none; }
     border-bottom: 2px solid #1A3431;
 }
 
-.show { display: block; }
+/* .show { display: block; }
 .hide { display: none; }
 .appear { animation: fade-in 0.4s; }
-.disappear { animation: fade-out 0.4s; }
+.disappear { animation: fade-out 0.4s; } */
 
 @keyframes fade-in {
     from {
