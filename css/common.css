@@ -165,28 +165,23 @@ ul { list-style: none; }
 
 .lnb_menu > .drodown > li {
     padding: 10px 0;
+    padding-left: 10px;
     width: 100%;
 }
 
 .lnb_menu > .drodown > li > a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #1A3431;
-
-    transition: 0.6s;
-    /* padding: 10px 8px; */
+    
+    transition: 0.2s all linear;
 }
 
 .lnb_menu > .drodown > li > a:hover {
+    font-size: 1.5rem;
     font-weight: 700;
+    border-bottom: 2px solid #1A3431;
 }
-
-/* .lnb_menu > .drodown > li:hover {
-    background: #1A3431;
-    transition: 0.4s all linear;
-}
-
-.lnb_menu > .drodown > li:hover a { color:#fff; } */
 
 .show { display: block; }
 .hide { display: none; }
@@ -836,16 +831,24 @@ select:disabled {
 
 
     /* 하위메뉴 */
-    .lnb_menu > ul > li {
-        padding: 10px 0;
+    .lnb_menu > .drodown > li {
+        padding: 8px 0;
+        padding-left: 8px;
         width: 100%;
     }
     
-    .lnb_menu > ul > li > a {
-        font-size: 1.3rem;
+    .lnb_menu > .drodown > li > a {
+        font-size: 1.2rem;
         font-weight: 600;
-        color: #fff;
-        padding: 10px 5px;
+        color: #1A3431;
+        
+        transition: 0.2s all linear;
+    }
+    
+    .lnb_menu > .drodown > li > a:hover {
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-bottom: 2px solid #1A3431;
     }
     
 
@@ -877,23 +880,6 @@ select:disabled {
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
     }
-
-/*     
-    .footer_gnb .lang p {
-        font-size: 1.3rem;
-    }
-
-    .footer_gnb .lang .eng { 
-        position: absolute;
-        top: 70px;
-    }
-    
-    .footer_gnb .lang .eng a {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #555555;
-    } 
-     */
 
     .footer_gnb .footer_sns a {
         font-size: 1.3rem;
