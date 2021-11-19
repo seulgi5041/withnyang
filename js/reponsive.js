@@ -9,11 +9,11 @@ $(document).ready(function(){
 //lnb 하위에 나오게 구현하기
 $(function(){
 
-    $(".gnb_menu").on({
+    $(".gnb_menu > li").on({
         "mouseenter" : function() {
 
-            $(".lnb_menu").removeClass("disappear");
-            $(".lnb_menu").addClass("appear");
+            $(".lnb_menu > .drodown").removeClass("disappear");
+            $(".lnb_menu > .drodown").addClass("appear");
 
             // 실질적으로 보이는 부분. 위에 두개속성은 애니메이션 속성을 주기위한것임.
             // .show : 해당 태그의 display를 none에서 block으로 해주는 속성.
@@ -28,6 +28,9 @@ $(function(){
         },
 
         "mouseleave" : function() {
+            $("#lnb_bg").hide();
+            // $(".lnb_menu").hide();
+
         }
     });
 
@@ -35,7 +38,7 @@ $(function(){
         "mouseleave" : function() {
                 $(".lnb_menu").removeClass("appear");
                 $(".lnb_menu").addClass("disappear");
-                $("#lnb_bg").hide();
+                // $("#lnb_bg").hide();
                 $(".lnb_menu").hide();
         }
     });
